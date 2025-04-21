@@ -42,7 +42,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: nitroxides.pdf
+          file: publi_EI.pdf
           asset_name: Main_Text.pdf
           tag: ${{ env.REF }}
           overwrite: true
@@ -50,7 +50,7 @@ jobs:
       #  uses: svenstaro/upload-release-action@v2
       #  with:
       #    repo_token: ${{ secrets.GITHUB_TOKEN }}
-      #    file: nitroxides_SI.pdf
+      #    file: publi_EI_SI.pdf
       #    asset_name: Supporting_Info.pdf
       #    tag: ${{ env.REF }}
       #    overwrite: true
