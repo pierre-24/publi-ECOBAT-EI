@@ -1,0 +1,157 @@
+\documentclass[review,preprint]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+
+\usepackage[final]{changes}
+
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{siunitx}
+\usepackage[version=4]{mhchem}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary {arrows.meta} 
+\usepackage{paralist}
+\usepackage{todonotes}
+\usepackage{tabularray}
+
+\DeclareMathOperator{\erf}{erf}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%\usepackage{lineno}
+%\linenumbers
+
+\journal{Chemical Physics Impact}
+
+\begin{document}
+	
+	\begin{frontmatter}
+		
+		%% Title, authors and addresses
+		
+		\title{Reaction at calcium anode}
+		
+		\author[1]{Pierre Beaujean\corref{cor1}}
+		
+		\ead{pierre.beaujean@unamur.be}
+		
+		\cortext[cor1]{Corresponding author}
+		
+		\affiliation[1]{organization={Theoretical Chemistry Laboratory, Unit of Theoretical and Structural Physical Chemistry, Namur Institute of Structured Matter, University of Namur},%Department and Organization
+			addressline={Rue de Bruxelles, 61}, 
+			city={Namur},
+			postcode={B-5000}, 
+			country={Belgium}}
+			
+			\author[1]{Benoît Champagne}
+		
+		\begin{abstract}
+			Probably.
+		\end{abstract}
+		
+		
+		%%Graphical abstract
+%		\begin{graphicalabstract}
+%			\includegraphics{Graphical_Abstract}
+%		\end{graphicalabstract}
+		
+		%%Research highlights
+%\begin{highlights}
+%	\item  \replaced{Electrostatics of the substituents drives the nitroxide redox behavior}{Electrostatic interactions between the redox center and substituents strongly affect nitroxide redox potentials.}
+%	\item \replaced{The nitroxide skeleton has a moderate influence (0.1 V) on the redox behavior}{The nitroxide skeleton has a moderate influence.}
+%	\item \replaced{Electrolytes stabilize charged nitroxides and shift their redox potentials}{Electrolytes stabilize charged nitroxide species, leading to shifts in their redox potentials.}
+%	\item \replaced{Ion-substituent (especially when aromatic) interactions enhance ion-pair stability}{Ion-substituent interactions, especially in aromatic systems, play a key role in ion-pair stability.}
+%\end{highlights}
+%
+%		
+%		\begin{keyword}
+%			%% keywords here, in the form: keyword \sep keyword
+%			Nitroxide 
+%			\sep Electrolyte 
+%			\sep Redox potential
+%			\sep Debye-Hückel 
+%			\sep Ion pairs 
+%			\sep Quantum chemistry
+%			
+%			%% PACS codes here, in the form: \PACS code \sep code
+%			
+%			%% MSC codes here, in the form: \MSC code \sep code
+%			%% or \MSC[2008] code \sep code (2000 is the default)
+%			
+%		\end{keyword}
+		
+	\end{frontmatter}
+	
+	% \linenumbers
+	
+%% main text
+
+\section{Introduction}
+
+\begin{itemize}
+	\item it is important to understand SEI and computational chemistry can help here,
+	\item M. L. Doublet et J. S. Filhol have developed a nice methodology and they have already tried in glyme \cite{nguyenSolvationReductionCoupling2023}
+	\item We want to try in THF (to follow our previous publication) and with \ce{CaH2}.
+\end{itemize}
+
+\section{Computational details}
+
+Correctly describe the computational protocol here would be nice. Also link  to my Github for the analysis scripts.
+
+\section{Results and discussion}
+
+\begin{itemize}
+	\item Stripping/platting reaction curve in THF + number of electron exchanged + fukui analysis.
+	\item Possible side product, based on the previous analysis: reaction energies, a bit of geometrical analysis.
+	\item Further curves (probably only the main byproduct, using PZC for the others?) + \ce{CaH2}.
+\end{itemize}
+
+\section{Conclusions}
+
+X.
+
+\clearpage
+\section*{CRediT authorship contribution statement}
+
+\textbf{Pierre Beaujean:} Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data Curation, Writing - Original Draft, Writing - Review \& Editing, Visualization.
+
+\textbf{Benoît Champagne:} xxx.
+	
+\section*{Declaration of competing interest}
+
+The author declares that he has no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper
+
+\section*{Acknowledgements}
+This work was supported by the Excellence of Science (EOS) programme  ECOBAT (EOS No. 40007515). 
+The calculations were performed on: \begin{inparaenum}[(i)]
+	\item the computers of the Consortium des \'{E}quipements de Calcul Intensif (C\'{E}CI, \url{http://www.ceci-hpc.be}) and particularly those of the Technological Platform of High-Performance Computing, for which the author gratefully acknowledge the financial support of the F.R.S-FNRS, of the Walloon Region, and of the University of Namur (Conventions No. 2.5020.11, U.G006.15, U.G018.19, U.G011.22, 1610468, and RW/GEQ2016), and
+	\item on Lucia, the Tier-1 supercomputer of the Walloon Region, infrastructure funded by the Walloon Region (grant agreement No. 1910247).
+\end{inparaenum} 
+
+\section*{Data availability}
+
+XXX.
+	
+
+\bibliographystyle{elsarticle-num-names} 
+\bibliography{biblio}
+	
+\end{document}
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
