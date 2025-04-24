@@ -28,6 +28,7 @@ def plot_q(ax, data, zc=1200, left_limit: int = -2):
     popt, pcov = curve_fit(lin, subdata['Potential vs ref [V]'], subdata['Charge on slab [e]'] - zc)
     x = numpy.linspace(data['Potential vs ref [V]'].min() - 1, data['Potential vs ref [V]'].max() + .25, 200)
     ax.plot(x, lin(x, *popt), '--', color=pl[0].get_c())
+    print(popt)
 
 def get_limits(inp: str):
     try:
