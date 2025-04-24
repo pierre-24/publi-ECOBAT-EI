@@ -68,7 +68,7 @@ axes[0].set_ylabel('F (eV)')
 axes[0].legend()
 
 axes[1].set_xlabel('E$^0_{rel}$ (V vs SHE)')
-axes[1].set_ylabel('N$_e$ in slab versus ZC')
+axes[1].set_ylabel('$\\Delta n_e\'$ in slab')
 
 plt.tight_layout()
 figure.savefig(args.output, dpi=300)
