@@ -114,7 +114,8 @@
 All calculations, including geometry optimizations and binding energy evaluations, are carried out using the Vienna \textit{Ab initio} Simulation Package (VASP, version 6.3.2), within the framework of density functional theory (DFT). The Perdew--Burke--Ernzerhof (PBE) exchange-correlation functional is employed in conjunction with the D3 dispersion correction and the projector augmented-wave (PAW) method~\cite{blochlProjectorAugmentedwaveMethod1994}. The \texttt{Ca\_pv} pseudopotential is used to model calcium~\cite{blochlProjectorAugmentedwaveMethod1994,kresseUltrasoftPseudopotentialsProjector1999}.
 A kinetic energy cutoff of \SI{550}{\electronvolt} is applied to the plane-wave basis set. Brillouin zone integrations are performed using a $4 \times 4 \times 1$ Monkhorst-Pack $k$-point mesh~\cite{monkhorstSpecialPointsBrillouinzone1976}. Solvation effects from outer solvent molecules are included via the VASPSOL implicit solvation model~\cite{mathewImplicitSolvationModel2014,mathewImplicitSelfconsistentElectrolyte2019}, with the dielectric constant set to $\varepsilon_r = 7.56$ to represent tetrahydrofuran (THF). Following Filhol and co-workers~\cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020,hagopianInitioModellingInterfacial2021,nguyenSolvationReductionCoupling2023}, the surface tension parameter is set to $\tau = 0$, the cavity is defined using a density cutoff of $\rho_K = 5 \times 10^{-5}$~\si{\per\angstrom\cubed}, and the cavity smearing parameter is kept at its default value of $\sigma_k = 0.6$.
 
-All structural optimizations employ the Limited-memory Broyden-Flet\-cher\-Gol\-dfarb-Shanno (L-BFGS) algorithm, as implemented in the Atomic Simulation Environment (ASE) package~\cite{larsenAtomicSimulationEnvironment2017}. Forces and energies are obtained from VASP, and the optimizations proceed until all atomic forces fall below \SI{e-2}{\electronvolt\per\angstrom}. For solvated calcium species (i.e., the calcium atom and its first explicit solvation shell), the system is placed in a cubic box of \SI{20}{\angstrom} side length, centered on the molecular center of mass, with fixed cell dimensions during optimization.
+All structural optimizations employ the Limited-memory Broyden-Flet\-cher\-Gol\-dfarb-Shanno (L-BFGS) algorithm, as implemented in the Atomic Simulation Environment (ASE) package~\cite{larsenAtomicSimulationEnvironment2017}. Forces and energies are obtained from VASP, and the optimizations proceed until all atomic forces fall below \SI{e-2}{\electronvolt\per\angstrom}. For solvated calcium species (i.e., the calcium atom and its first explicit solvation shell), the system is placed in a cubic box of \SI{20}{\angstrom} side length, centered on the molecular center of mass, with fixed cell dimensions during optimization. Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}. In line with the findings of Hahn \textit{et al.}~\cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion is modeled as being coordinated by 6 THF molecules in this study.
+
 Slab models are constructed from optimized bulk structures of \ce{Ca^0} (Materials Project ID: \texttt{MP-45}) and \ce{CaH2} (\texttt{MP-23713}), both relaxed with respect to atomic positions and cell parameters. From these, $3 \times 3$ and $2 \times 2$ slabs of the (100) surface of \ce{Ca^0} and \ce{CaH2}, respectively, are created. Each slab consists of six atomic layers and is separated from its periodic image by a vacuum region of \SI{52}{\angstrom} (to have room for the solvated structures, \textit{vide infra}). The slab terminations are selected to ensure non-polar surfaces, generated using ASE. They are then relaxed with frozen cell parameters.
 
 Electrochemical interface effects are modeled in the grand canonical ensemble, using the formalism developed by Filhol \textit{et al.}~\cite{hagopianAdvancementHomogeneousBackground2022}, using a set of scripts available at \url{https://github.com/pierre-24/ec-interface/}. In each case, a symmetric unit cell is constructed by placing the optimized solvated structure on both sides of the slab, within the interfacial double-layer region, such that the atom closest to the surface is at a distance of \SI{9}{\angstrom} from it.
@@ -126,7 +127,10 @@ where $\Delta n_e$ denotes the change in electron number relative to the neutral
 \begin{equation}
 	\Phi(\Delta n_e) = E_\infty(\Delta n_e) - E_F(\Delta n_e),
 \end{equation}
-with $E_\infty$ and $E_F$ denoting the vacuum and Fermi levels, respectively. These absolute potentials are converted to the standard hydrogen electrode (SHE) by using $E^0_{rel} = \Phi(\Delta n_e) - \SI{4.5}{\volt}$. Note that these charged systems are treated using the homogeneous background method (HBM)~\cite{hagopianAdvancementHomogeneousBackground2022} to account for the homogeneous background of charge added by VASP to maintain the neutrality of the unit cell. In this study, the fraction of active electrons set to $\alpha_s = 0.8$.  For these calculations, the energy is converged at a tight convergence criteria of \SI{e-6}{\electronvolt}.
+with $E_\infty$ and $E_F$ denoting the vacuum and Fermi levels, respectively. Note that when $\Delta n_e$, this work function correspond to the potential of zero charge (PZC).
+Note that these charged systems are treated using the homogeneous background method (HBM)~\cite{hagopianAdvancementHomogeneousBackground2022} to account for the homogeneous background of charge added by VASP to maintain the neutrality of the unit cell. In this study, the fraction of active electrons set to $\alpha_s = 0.8$.  For these calculations, the energy is converged at a tight convergence criteria of \SI{e-6}{\electronvolt}.
+
+In all cases, the absolute potentials obtained from calculations are converted to the standard hydrogen electrode (SHE) by using $E^0_{rel} = \Phi(\Delta n_e) - \SI{4.5}{\volt}$.
 
 
 \section{Results and discussion}
@@ -137,9 +141,7 @@ The deposition of calcium metal, commonly referred to as the plating process, ar
 \begin{equation*}
 	\ce{Ca_{(surf)} + [Ca(THF)_6]^2+ + 2e^- <=> Ca_{(surf)} + Ca_{(bulk)} + 6 THF}.
 \end{equation*}
-In line with the findings of Hahn \textit{et al.}~\cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion is modeled as being coordinated by six tetrahydrofuran (THF) molecules in this study.
-
-The electrochemical potential associated with this interfacial reaction is determined from the free electrochemical energies computed for both the oxidized (left-hand side) and reduced (right-hand side) species as a function of the electrode potential. These results are shown in the top panel of Fig.~\ref{fig:platting}. The corresponding free energy curves exhibit the characteristic parabolic behavior described in previous studies \cite{hagopianInitioModellingInterfacial2021}, with their intersection defining the equilibrium potential of the reaction. In the present case, the extrapolated crossing point yields an equilibrium potential of \SI{-3.4}{\volt} versus SHE.
+The electrochemical potential associated with this interfacial reaction is determined from the free electrochemical energies computed for both the oxidized (left-hand side) and reduced (right-hand side) species as a function of the electrode potential. These results are shown in the top panel of Fig.~\ref{fig:platting}. The corresponding free energy curves exhibit the characteristic parabolic behavior described in previous studies \cite{hagopianInitioModellingInterfacial2021,hagopianAdvancementHomogeneousBackground2022}, with their intersection defining the equilibrium potential of the reaction. In the present case, the extrapolated crossing point yields an equilibrium potential of \SI{-3.4}{\volt} versus SHE.
 
 \begin{figure}[!h]
 	\centering
@@ -153,7 +155,7 @@ Another view is provided by tracking the number of effective number of electron 
 \end{equation}
 where $\Delta n_e\{\ce{Ca(THF)_6}\}$ is the variation in the number of electron located in the solvated species, obtained by integrating the electron density. The  values of $\Delta n_e' = f(E^0_{rel})$ are plotted in the lower panel of Fig.~\ref{fig:platting}: on the one hand, in the absence of solvated species, all electrons are injected into the slab, and one observe a almost linear relationship between $\Delta n_e'$ and $E^0_{rel}$, prototypical of a capacitor. On the other hand, the presence of a solvated species implies the transfer of two electrons from the solvated \ce{Ca} to the surface, which translate into a shift of the corresponding $\Delta n_e'$ line. Above \SI{-2.9}{\volt} versus SHE, when electrons are injected in the system, they are inserted into the anode, as indicated by almost parallel lines. This behavior change below this potential, indicating that the \ce{Ca(THF)_6} species reacts by adsorbing electrons. Thus, this second  potential value can be considered as the onset potential \cite{batchelor-mcauleyDefiningOnsetPotential2023} (\textit{i.e.}, the potential at which the reaction starts). At this point, the difference of $\Delta n_e'$ between the reduced and oxidized systems is 2.1, which can be decomposed into 2 electrons for the reduction of  \ce{Ca^2+} and 0.1 electron for the polarization of the surface. By extrapolation, it would be 0.2 electron at the equilibrium potential.
 
-In G1, Nguyen \textit{et al.}~\cite{nguyenSolvationReductionCoupling2023}, using an equivalent computational framework, report a slightly higher equilibrium potential of \SI{-3.29}{\volt} vs SHE. However, the onset potential remains nearly identical between the two solvent. They also indicates that one could estimate the entropic contribution due to the release of the solvent molecules by using the entropic contribution to the free Gibbs energy of solid to liquid (fusion) phase change. This result to a similar correction of about \SI{0.2}{\volt} in both solvent. 
+In G1, Nguyen \textit{et al.}~\cite{nguyenSolvationReductionCoupling2023}, using an equivalent computational framework, report a slightly higher equilibrium potential of \SI{-3.29}{\volt} vs SHE. However, the onset potential remains nearly identical between the two solvent. They also indicates that one could estimate the entropic contribution due to the release of the solvent molecules by using the entropic contribution to the free Gibbs energy of solid to liquid (fusion) phase change. This result to a similar correction of about +\SI{0.2}{\volt} in both solvent, which remains below the thermodynamic equilibrium potential of Ca/\ce{Ca^2+}, in agreement with measurement performed in pure THF and THF/G1 mixes \cite{melemedImpactDifferentialCa22023}.
 
 \subsection{Reduction of solvated \ce{Ca^2+}}
 
@@ -167,12 +169,14 @@ A Fukui function analysis offers insight into the electronic redistribution asso
 	\label{fig:fukui}
 \end{figure}
 
-Several potential degradation pathways for the solvated \ce{Ca^{2+}} complex are proposed and illustrated in Fig.~\ref{fig:THFdeg}, based on insights from the Fukui function analysis. Pathways include: {\begin{inparaenum}[(i)]
-	\item double proton abstraction by calcium leading to the formation of an oxocyclopentadiene species (\textbf{2}),
+Several potential degradation pathways for the solvated \ce{Ca^{2+}} complex are proposed and illustrated in Fig.~\ref{fig:THFdeg}, based on insights from the Fukui function analysis.
+Pathways include: {\begin{inparaenum}[(i)]
+	\item double proton abstraction by calcium leading to the formation of the 2,3-dihydrofuran (\textbf{2}),
 	\item molecular reorganization into an $x$-butadien-1-ol species (\textbf{3a}$_x$), and
 	\item  a proton-transfer-driven transformation into an $x$-butadien-1-olate species (\textbf{3b}$_x$).
 \end{inparaenum}
-This first mechanism has been proposed after experimental measurements by Wang \textit{et al.} \cite{wangPlatingStrippingCalcium2018} in the presence of \ce{BH4-}, while the second were observed in AIMD simulations by Pathreeker and Hosein\cite{pathreekerWhyTetrahydrofuranGood2021}.
+This first mechanism has been proposed after experimental measurements by Wang \textit{et al.} \cite{wangPlatingStrippingCalcium2018} in the presence of \ce{BH4-}, although latter studies revealed that it can also be found in THF in the absence of electrochemical reactions \cite{taUnderstandingCaElectrodeposition2019}. The second, leading to the formation of non-cyclic unsaturated butanols, were observed in AIMD simulations by Pathreeker and Hosein \cite{pathreekerWhyTetrahydrofuranGood2021}. Such degradation mechanism were also observed in other solvents \cite{yamijalaStabilityCalciumIon2021}. Finally, the possibility proton transfer to the Ca, again observed in AIMD \cite{pathreekerWhyTetrahydrofuranGood2021} and which would lead to the formation of \ce{CaH2}, is also investigated.
+It is important to note that this contribution is therefore limited to the initial stages of the reaction, particularly under the constraint of a constant number of atoms. Subsequent reactions between these primary products, and likely with the electrode surface, are known to yield smaller molecular fragments, including \ce{C2H4} and \ce{CO2}~\cite{taUnderstandingCaElectrodeposition2019,melemedImpactDifferentialCa22023}.
 
 \begin{figure}[!h]
 	\centering
@@ -183,7 +187,6 @@ This first mechanism has been proposed after experimental measurements by Wang \
 
 
 \begin{itemize}
-	\item Stripping/platting reaction curve in THF + number of electron exchanged + fukui analysis.
 	\item Possible side product, based on the previous analysis: reaction energies, a bit of geometrical analysis.
 	\item Further curves (probably only the main byproduct, using PZC for the others?) + \ce{CaH2}.
 \end{itemize}
@@ -206,8 +209,8 @@ The author declares that he has no known competing financial interests or person
 \section*{Acknowledgements}
 This work was supported by the Excellence of Science (EOS) programme  ECOBAT (EOS No. 40007515). 
 The calculations were performed on: \begin{inparaenum}[(i)]
-	\item the computers of the Consortium des \'{E}quipements de Calcul Intensif (C\'{E}CI, \url{http://www.ceci-hpc.be}) and particularly those of the Technological Platform of High-Performance Computing, for which the author gratefully acknowledge the financial support of the F.R.S-FNRS, of the Walloon Region, and of the University of Namur (Conventions No. 2.5020.11, U.G006.15, U.G018.19, U.G011.22, 1610468, and RW/GEQ2016), and
-	\item on Lucia, the Tier-1 supercomputer of the Walloon Region, infrastructure funded by the Walloon Region (grant agreement No. 1910247).
+	\item Lucia, the Tier-1 supercomputer of the Walloon Region, infrastructure funded by the Walloon Region (grant agreement No. 1910247), and
+	\item  the LUMI supercomputer, owned by the EuroHPC Joint Undertaking, hosted by CSC (Finland) and the LUMI consortium. We acknowledge LUMI-BE for awarding this project access through a LUMI-BE Regular Access call. LUMI-BE is joint effort from BELSPO (federal), SPW Économie, Emploi, Recherche (Wallonia), Department of Economy, Science \& Innovation (Flanders) and Innoviris (Brussels).
 \end{inparaenum} 
 
 \section*{Data availability}
