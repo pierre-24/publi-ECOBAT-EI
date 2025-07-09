@@ -114,7 +114,7 @@ Therefore, and following our previous investigation into the XPS signatures of d
 
 All calculations, including geometry optimizations and binding energy evaluations, are carried out using the Vienna \textit{Ab initio} Simulation Package (VASP, version 6.3.2), within the framework of density functional theory (DFT). The Perdew--Burke--Ernzerhof (PBE) exchange-correlation functional is employed in conjunction with the D3 dispersion correction and the projector augmented-wave (PAW) method \cite{blochlProjectorAugmentedwaveMethod1994}. The \texttt{Ca\_pv} pseudopotential is used to model calcium \cite{blochlProjectorAugmentedwaveMethod1994,kresseUltrasoftPseudopotentialsProjector1999}. A kinetic energy cutoff of \SI{550}{\electronvolt} is applied to the plane-wave basis set. Brillouin zone integrations are performed using a $4 \times 4 \times 1$ Monkhorst-Pack $k$-point mesh \cite{monkhorstSpecialPointsBrillouinzone1976}. Solvation effects from outer solvent molecules are included via the VASPSOL implicit solvation model \cite{mathewImplicitSolvationModel2014,mathewImplicitSelfconsistentElectrolyte2019}, with the dielectric constant set to $\varepsilon_r = 7.56$ to represent tetrahydrofuran (THF). Following Filhol and co-workers \cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020,hagopianInitioModellingInterfacial2021,nguyenSolvationReductionCoupling2023}, the surface tension parameter is set to $\tau = 0$, the cavity is defined using a density cutoff of $\rho_K = 5 \times 10^{-5}$~\si{\per\angstrom\cubed}, and the cavity smearing parameter is kept at its default value of $\sigma_k = 0.6$.
 
-Following our previous investigation \cite{beaujeanBinding2025}, structural optimizations employ the Limited-memory Broyden-Flet\-cher\-Gol\-dfarb-Shanno (L-BFGS) algorithm, as implemented in the Atomic Simulation Environment (ASE) package \cite{larsenAtomicSimulationEnvironment2017}. Forces and energies are obtained from VASP, and the optimizations proceed until all atomic forces fall below \SI{e-2}{\electronvolt\per\angstrom}. For solvated calcium species (i.e., the calcium atom and its first explicit solvation shell), the system is placed in a cubic box of \SI{20}{\angstrom} side length, centered on the molecular center of mass, with fixed cell dimensions during optimization. Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}. In line with the findings of Hahn \textit{et al.} \cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion is modeled as being coordinated by 6 THF molecules in this study.
+Following our previous investigation \cite{beaujeanBinding2025}, structural optimizations employ the Limited-memory Broyden-Flet\-cher\-Gol\-dfarb-Shanno (L-BFGS) algorithm, as implemented in the Atomic Simulation Environment (ASE) package \cite{larsenAtomicSimulationEnvironment2017}. Forces and energies are obtained from VASP, and the optimizations proceed until all atomic forces fall below \SI{e-2}{\electronvolt\per\angstrom}. For solvated calcium species (i.e., the calcium atom and its first explicit solvation shell), the system is placed in a cubic box of \SI{20}{\angstrom} side length, centered on the molecular center of mass, with fixed cell dimensions during optimization. Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}. In line with the findings of Hahn \textit{et al.} \cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion is modeled as being coordinated by 6 THF molecules in this study, arranged in a hexagonal fashion with oxygens pointing towards the Ca.
 
 Slab models are constructed from optimized bulk structures of \ce{Ca^0} (Materials Project ID: \texttt{MP-45}) and \ce{CaH2} (\texttt{MP-23713}), both relaxed with respect to atomic positions and cell parameters. From these, $3 \times 3$ and $2 \times 2$ slabs of the (100) surface of \ce{Ca^0} and \ce{CaH2}, respectively, are created. Each slab consists of six atomic layers and is separated from its periodic image by a vacuum region of \SI{52}{\angstrom} (to have room for the solvated structures, \textit{vide infra}). The slab terminations are selected to ensure non-polar surfaces, generated using ASE. They are then relaxed with frozen cell parameters.
 
@@ -157,7 +157,7 @@ where $\Delta n_e\{\ce{Ca(THF)_6}\}$ is the variation in the number of electron 
 
 In G1, Nguyen \textit{et al.} \cite{nguyenSolvationReductionCoupling2023}, using an equivalent computational framework, report a slightly higher equilibrium potential of \SI{-3.29}{\volt} vs SHE. However, the onset potential remains nearly identical between the two solvent. They also indicates that one could estimate the entropic contribution due to the release of the solvent molecules by using the entropic contribution to the free Gibbs energy of solid to liquid (fusion) phase change. This result to a similar correction of about +\SI{0.2}{\volt} in both solvent, which remains below the thermodynamic equilibrium potential of Ca/\ce{Ca^2+}, in agreement with measurement performed in pure THF and THF/G1 mixes \cite{melemedImpactDifferentialCa22023}.
 
-\subsection{Reduction of solvated \ce{Ca^2+}}
+\subsection{Reduction of solvated \ce{Ca^2+} and possible degradation products}
 
 A Fukui function analysis offers insight into the electronic redistribution associated with electron transfer. Specifically, the nucleophilic Fukui function, defined as $f^+ = \rho_{N+\Delta} - \rho_N$, is evaluated at the onset potential and depicted in Fig.~\ref{fig:fukui}. The resulting distribution of additional electron density is primarily localized around the \ce{Ca^{2+}} ion, but also extends into the solvation shell. Notably, significant electron density accumulates on the THF molecule farthest from the electrode surface, indicating a reorganization of its molecular orbitals. This reorganization involves contributions from $\pi_{C-C}$, $\sigma^\star_{C-H}$, and $\sigma^\star_{C-O}$ orbitals, suggesting a possible activation pathway that may lead to solvent decomposition.
 
@@ -169,24 +169,48 @@ A Fukui function analysis offers insight into the electronic redistribution asso
 	\label{fig:fukui}
 \end{figure}
 
-Several potential degradation pathways for the solvated \ce{Ca^{2+}} complex are proposed and illustrated in Fig.~\ref{fig:THFdeg}, based on insights from the Fukui function analysis.
+Several potential degradation pathways for the solvated \ce{Ca^{2+}} complex (\textbf{1\textsuperscript{2+}}) after reduction (\textbf{1}) are proposed and illustrated in Fig.~\ref{fig:THFdeg}, based on insights from the Fukui function analysis.
 Pathways include: {\begin{inparaenum}[(i)]
 	\item double proton abstraction by calcium leading to the formation of the 2,3-dihydrofuran (\textbf{2}),
 	\item molecular reorganization into an $x$-butadien-1-ol species (\textbf{3a}$_x$), and
 	\item  a proton-transfer-driven transformation into an $x$-butadien-1-olate species (\textbf{3b}$_x$).
 \end{inparaenum}
 The first degradation mechanism was originally proposed by Wang \textit{et al.}~\cite{wangPlatingStrippingCalcium2018}, based on experimental observations in the presence of \ce{BH4-}. Subsequent studies, however, demonstrated that similar decomposition pathways can occur in THF even in the absence of electrochemical reactions~\cite{taUnderstandingCaElectrodeposition2019}. The second mechanism, involving the formation of non-cyclic unsaturated butanols, was identified through AIMD simulations by Pathreeker and Hosein~\cite{pathreekerWhyTetrahydrofuranGood2021}, and analogous degradation pathways have been reported in other solvents~\cite{yamijalaStabilityCalciumIon2021}. 
-In the present work, for intermediate \textbf{3a\textsubscript{1}}, a keto-enol tautomerization is considered, with the equilibrium favoring the keto form (\textbf{3a\textsubscript{1}'}). In contrast, the optimization of \textbf{3a\textsubscript{2}} leads to dissociation and the formation of a hydroxyl moiety, which may contribute to the emergence of hydroxylated surface terminations \cite{fujimoriInteractionWaterCaO2016a}. Finally, the possibility of proton transfer to the calcium atom, previously observed in AIMD simulations \cite{pathreekerWhyTetrahydrofuranGood2021}, is also investigated, as it could result in the formation of \ce{CaH2}.
+In the present work, for intermediate \textbf{3a\textsubscript{1}}, a keto-enol tautomerization is considered, with the equilibrium favoring the keto form (\textbf{3a\textsubscript{1}'}). In contrast, the optimization of \textbf{3a\textsubscript{2}} leads to dissociation and the formation of a hydroxyl moiety  (\textbf{3a\textsubscript{2}'}), which may contribute to the emergence of hydroxylated surface terminations \cite{fujimoriInteractionWaterCaO2016a}. Finally, the possibility of proton transfer to the calcium atom (\textbf{3b}$_x$), previously observed in AIMD simulations \cite{pathreekerWhyTetrahydrofuranGood2021}, is also investigated, as it could result in the formation of \ce{CaH2}. It is important to note that this contribution is therefore limited to the initial stages of the reaction, particularly under the constraint of a constant number of atoms. Subsequent reactions between these primary products, and likely with the electrode surface, are known to yield smaller molecular fragments, including \ce{C2H4} and \ce{CO2} \cite{taUnderstandingCaElectrodeposition2019,melemedImpactDifferentialCa22023}.
 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\linewidth]{Figure3}
-	\caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the by Fukui analysis.}
+	\caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the by Fukui analysis. During optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganize into \textbf{3a\textsubscript{2}'}.}
 	\label{fig:THFdeg}
 \end{figure}
 
-It is important to note that this contribution is therefore limited to the initial stages of the reaction, particularly under the constraint of a constant number of atoms. Subsequent reactions between these primary products, and likely with the electrode surface, are known to yield smaller molecular fragments, including \ce{C2H4} and \ce{CO2} \cite{taUnderstandingCaElectrodeposition2019,melemedImpactDifferentialCa22023}.
+Following geometry optimization, the reaction energies for reduction processes, along with the calcium–oxygen distances, are summarized in Table~\ref{tab:degrad}. The computed reaction energies confirm that all reduction pathways are energetically favorable. In particular, pathways involving proton transfer (\textbf{3b}$_x$) or the formation of hydroxylated species (\textbf{3a\textsubscript{2}'}) exhibit significantly exergonic profiles ($\Delta E < \SI{-4}{\electronvolt}$). 
+The evolution of Ca–O distances further highlights the impact of degradation on the solvation environment. The addition of two electrons to the solvated calcium complex (\ce{\textbf{1\textsuperscript{2+}} + 2e- -> \textbf{1}}) induces only minimal changes to the Ca--O[THF] bond lengths. However, subsequent degradation steps (\textbf{2} and \textbf{3}) increase these distances by at least \SI{0.2}{\angstrom}, indicating a destabilization of the first solvation shell.
+In some cases, such as \textbf{3a\textsubscript{2}'} and \textbf{3b}$_x$, the number of coordinating THF molecules decreases, and one or more Ca--O[THF] distance elongate beyond \SI{2.65}{\angstrom}, effectively excluding these solvent molecules from the immediate coordination sphere. Notably, with the exception of \textbf{2}, the degradation products tend to coordinate more closely to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), especially when they carry a formal charge. These findings suggest that, upon calcium deposition at the electrode surface, the corresponding degradation products are likely to remain associated with the metal center and contribute to surface passivation. The intercalation of degradation products into the calcium metal layer has been reported in THF by Pathreeker \textit{et al.} \cite{pathreekerWhyTetrahydrofuranGood2021}, in the presence of an electrolyte. Similarly, Young \textit{et al.}  \cite{youngEthyleneCarbonateBasedElectrolyte2018} observed such intercalation in ethylene carbonate (EC), a solvent with similar structural features, even in the absence of added electrolyte.
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{>{\bfseries}lccc}
+		\hline
+		& $\Delta E_r$ & Ca--O[THF] & Ca--O[X] \\
+		\hline
+		 1\textsuperscript{2+}&  --- & 2.365 $\pm$ 0.002 & --- \\
+		1 & -2.20 & 2.367 $\pm$ 0.003 & 2.349 \\
+		2 & -1.74 & 2.545 $\pm$ 0.047 & 4.497 \\
+		3a\textsubscript{1} & -1.92 & 2.536 $\pm$ 0.028 & 2.394 \\
+		3a\textsubscript{1}’ & -3.37 & 2.488 $\pm$ 0.040 & 2.089 \\
+		3b\textsubscript{1} & -4.72 & 2.597 $\pm$ 0.056 & 2.185 \\
+		3a\textsubscript{2}’ & -4.80 & 2.710 $\pm$ 0.382 & 2.165 \\
+		3b\textsubscript{2} & -4.04 & 2.617 $\pm$ 0.108 & 2.162 \\
+		3a\textsubscript{3} & -1.92 & 2.423 $\pm$ 0.013 & 2.344 \\
+		3b\textsubscript{3} & -4.21 & 2.653 $\pm$ 0.198 & 2.108 \\
+		\hline
+	\end{tabular}
+	\caption{Reduction reaction energies with respect to \textbf{1} ($\Delta E_r$, in \si{\electronvolt}) and average calcium-oxygen distances (with the oxygen of \textit{intact} THF, Ca--O[THF], and with the oxygen \textit{degraded} THF, Ca--O[X], in \si{\angstrom}) for all degradation reactions (\textbf{2}-\textbf{3}).}
+	\label{tab:degrad}
+\end{table}
 
 
 \begin{itemize}
