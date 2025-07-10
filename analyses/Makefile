@@ -8,3 +8,7 @@ main:
 	python ./plot_EC2.py ../data/EC_Ca_bare.csv ../data/EC_Ca_solv.csv ../data/EC_Ca_2.csv  ../data/EC_Ca_3a1p.csv   ../data/EC_Ca_3b1.csv   ../data/EC_Ca_3a2p.csv   ../data/EC_Ca_3b2.csv    ../data/EC_Ca_3b3.csv \
 	-n 'Bare' '$$\bf{1}$$' '$$\bf{2}$$' "$$\bf{3a_1{}'}$$" '$$\bf{3b_1}$$'  "$$\bf{3a_2{}'}$$" '$$\bf{3b_2}$$' '$$\bf{3b_3}$$' \
 	--limits=-4:0.0 --left-limit=-4 -o ../Figure4.pdf
+	
+	python ./plot_q.py ../data/EC_Ca_solv.csv ../data/EC_Ca_2.csv  ../data/EC_Ca_3a1p.csv   ../data/EC_Ca_3b1.csv   ../data/EC_Ca_3a2p.csv   ../data/EC_Ca_3b2.csv    ../data/EC_Ca_3b3.csv \
+	-n '$$\bf{1}$$' '$$\bf{2}$$' "$$\bf{3a_1{}'}$$" '$$\bf{3b_1}$$'  "$$\bf{3a_2{}'}$$" '$$\bf{3b_2}$$' '$$\bf{3b_3}$$' \
+	--limits=-4:0.5 --zc=376 -o ../Figure5.pdf
