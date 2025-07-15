@@ -15,7 +15,7 @@ def plot_F(ax, data, left_limit: int = -2, name: str = '', color: str = ''):
     
     subdata = data[data['Potential vs ref [V]'] > left_limit]
     popt, pcov = curve_fit(f, subdata['Potential vs ref [V]'], subdata['F [eV]'])
-    x = numpy.linspace(data['Potential vs ref [V]'].min() - 1, data['Potential vs ref [V]'].max() + .25, 200)
+    x = numpy.linspace(data['Potential vs ref [V]'].min(), data['Potential vs ref [V]'].max(), 200)
     ax.plot(x, f(x, *popt), '--', color=pl[0].get_c())
 
 def get_limits(inp: str):
@@ -55,7 +55,7 @@ for inp, name, color in zip(args.inputs, args.names, args.colors):
 
 ax.set_xlim(*args.limits)
 ax.set_ylabel('F (eV)')
-ax.legend(ncol=4)
+ax.legend()
 
 ax.set_xlabel('E$^0_{rel}$ (V vs SHE)')
 

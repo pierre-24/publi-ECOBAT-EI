@@ -16,4 +16,4 @@ main:
 	python ./plot_EC3.py ../data/EC_CaH2_bare.csv ../data/EC_CaH2_bare_ef.csv ../data/EC_CaH2_solv.csv ../data/EC_CaH2_3b1.csv \
 	-n 'Bare (VB)' 'Bare (CB)' '$$\bf{1}$$' '$$\bf{3b_1}$$' \
 	-c "C0" "lightblue" "C1" "C4" \
-	-L -5 --limits="-4:2" -o ../Figure6.pdf
+	-L -5 --limits="-4.5:2" -o ../Figure6.pdf
