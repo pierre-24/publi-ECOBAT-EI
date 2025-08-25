@@ -6,14 +6,14 @@ For v1.0:
 - [x] Say something about the zero of energy in Fig. 1
 - [x] Conclude 
 - [x] Aknowledgements
-- [ ] Clean up the bibliography, check for duplicates
 - [x] Author CRediT stuff
 - [x] Data availability
 
 
-For v2.0: 
+For v3.0: 
 
 - [ ] abstract & keywords
 - [ ] prepare a TOC
 - [ ] Research highlight
+- [ ] Clean up the bibliography, check for duplicates
 - [ ] Structures
