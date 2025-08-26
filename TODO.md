@@ -13,7 +13,7 @@ For v1.0:
 For v3.0: 
 
 - [ ] abstract & keywords
-- [ ] prepare a TOC
-- [ ] Research highlight
+- [x] prepare a TOC
+- [x] Research highlight
 - [ ] Clean up the bibliography, check for duplicates
 - [ ] Structures
