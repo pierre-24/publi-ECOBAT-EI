@@ -12,7 +12,4 @@ For v1.0:
 - [x] prepare a TOC
 - [x] Research highlight
 - [x] Clean up the bibliography, check for duplicates
-
-For v4.0:
-
-- [ ] Structures
+- [x] Structures + raw results

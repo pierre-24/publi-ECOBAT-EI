@@ -1,0 +1,16 @@
+INCAR created by Atomic Simulation Environment
+ AMIN = 0.010000
+ ENCUT = 550.000000
+ NELECT = 188.000000
+ EB_K = 7.580000
+ TAU = 0.000000
+ SIGMA_K = 0.600000
+ NC_K = 0.000050
+ EDIFF = 1.00e-06
+ GGA = PE
+ PREC = Accurate
+ NELM = 400
+ NSIM = 32
+ IVDW = 11
+ NCORE = 16
+ LSOL = .TRUE.

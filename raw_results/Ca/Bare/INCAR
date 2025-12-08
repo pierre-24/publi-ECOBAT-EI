@@ -1,0 +1,24 @@
+
+KPAR = 3
+NCORE = 16
+NSIM = 32
+
+! convergence and precision
+ENCUT  = 550
+EDIFF = 1e-6
+NELM = 400
+AMIN = 0.01
+PREC = Accurate
+IVDW = 11 ! d3
+
+! Solvatation
+LSOL = .TRUE.
+EB_K = 7.58
+TAU = 0.0
+NC_K = 5E-5
+SIGMA_K = 0.6
+
+!! parameters required for EC calculations:
+LCHARG = .TRUE.  ! Create CHGCAR
+LVHAR = .TRUE.   ! Create LOCPOT
+LVTOT = .TRUE.   ! Include VXC
