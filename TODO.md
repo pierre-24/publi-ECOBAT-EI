@@ -8,12 +8,11 @@ For v1.0:
 - [x] Aknowledgements
 - [x] Author CRediT stuff
 - [x] Data availability
-
-
-For v3.0: 
-
-- [ ] abstract & keywords
+- [x] abstract & keywords
 - [x] prepare a TOC
 - [x] Research highlight
-- [ ] Clean up the bibliography, check for duplicates
+- [x] Clean up the bibliography, check for duplicates
+
+For v4.0:
+
 - [ ] Structures
