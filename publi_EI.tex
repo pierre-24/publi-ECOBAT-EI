@@ -138,14 +138,20 @@
 	\sffamily
 	\begin{tabular}{m{4.5cm} p{13.5cm} }
 		
-		\includegraphics{head_foot/DOI} & \noindent\LARGE{\textbf{Theoretical study of reduction reactions near a calcium anode: a grand canonical DFT investigation$^\dag$}} \\
+		\includegraphics{head_foot/DOI} & \noindent\LARGE{\textbf{%
+				Theoretical study of reduction reactions near a calcium anode: a grand canonical DFT investigation$^\dag$
+			}} \\
 		\vspace{0.3cm} & \vspace{0.3cm} \\
 		
 		& \noindent\large{Pierre Beaujean$^{\ast}$\textit{$^{a}$} and Benoît Champagne\textit{$^{a}$}} \\
 		
-		\includegraphics{head_foot/dates} & \noindent\normalsize{
-		Understanding the fundamental electrochemical behavior of calcium electrolytes is crucial for advancing calcium-metal batteries. In this work, Grand-canonical density functional theory (GC-DFT) is used to elucidate the electrode reaction mechanisms governing calcium plating and solvent decomposition in tetrahydrofuran (THF). Analysis of thermochemical energy profiles indicates that the commonly assumed solvated species \ce{[Ca(THF)_6]^2+} becomes thermodynamically unstable below \SI{-2.9}{\volt} vs SHE, significantly more positive than its predicted reduction potential of \SI{-3.4}{\volt}. A Fukui-function-guided exploration of THF degradation pathways shows that solvent breakdown can initiate at substantially higher potentials, with calcium hydride formation emerging near \SI{-1.5}{\volt} vs SHE through proton or hydride transfer from THF-derived fragments. The resulting \ce{CaH2} further accelerates degradation by shifting reduction potentials approximately \SI{1}{\volt} toward more positive values.
-		} \\%The abstrast goes here instead of the text "The abstract should be..."
+		\includegraphics{head_foot/dates} & \noindent\normalsize{%
+		Understanding the fundamental electrochemical behavior of calcium electrolytes is crucial for advancing calcium-metal batteries. 
+		In this work, Grand-Canonical Density Functional Theory (GC-DFT) is used to elucidate the electrode reaction mechanisms governing calcium plating and solvent (tetrahydrofuran, THF) decomposition. 
+		Analysis of thermochemical energy profiles indicates that the commonly assumed solvated species \ce{[Ca(THF)_6]^2+} becomes thermodynamically unstable below \SI{-2.9}{\volt} vs SHE, significantly more positive than its predicted reduction potential of \SI{-3.4}{\volt}. 
+		A Fukui-function-guided exploration of THF degradation pathways shows that solvent breakdown can be initiated at substantially higher potentials, with calcium hydride formation emerging near \SI{-1.5}{\volt} vs SHE through proton or hydride transfer from THF-derived fragments. 
+		The resulting \ce{CaH2} further accelerates degradation by shifting reduction potentials approximately \SI{1}{\volt} toward more positive values.
+		} \\
 		
 	\end{tabular}
 	
@@ -163,21 +169,23 @@
 
 %%%FOOTNOTES%%%
 
-\footnotetext{\textit{$^{a}$~Theoretical Chemistry Laboratory, Unit of Theoretical and Structural Physical Chemistry, Namur Institute of Structured Matter, University of Namur, Rue de Bruxelles, 61,  Namur, B-5000, Belgium}}
+\footnotetext{\textit{%
+		$^{a}$~Theoretical Chemistry Laboratory, Unit of Theoretical and Structural Physical Chemistry, Namur Institute of Structured Matter, University of Namur, Rue de Bruxelles, 61,  Namur, B-5000, Belgium. E-mail: \href{mailto:pierre.beaujean@unamur.be}{pierre.beaujean@unamur.be}.
+	}}
 
 %Please use \dag to cite the ESI in the main text of the article.
 %If you article does not have ESI please remove the the \dag symbol from the title and the footnotetext below.
 %\footnotetext{\dag~Supplementary Information available: [details of any supplementary information available should be included here]. See DOI: 00.0000/00000000.}
-%additional addresses can be cited as above using the lower-case letters, c, d, e... If all authors are from the same address, no letter is required
 
-\footnotetext{\dag~Supplementary Information available: \begin{inparaenum}[(i)]
+\footnotetext{%
+	\dag~Supplementary Information available: \begin{inparaenum}[(i)]
 		\item the spacial arrangement of the slabs,
 		\item Fukui function for \textbf{3a\textsubscript{1}'}, and
 		\item calcium-oxygen distances for compounds in Table \ref{tab:degrad}.
 	\end{inparaenum}
-	Further data (structures, raw values, and analysis scripts) underlying this study are openly available on GitHub at the URL \url{https://github.com/pierre-24/publi-ECOBAT-EI/}, or upon reasonable request to the authors.}
-		
-		
+	Further data (structures, raw values, and analysis scripts) underlying this study are openly available on GitHub at the URL \url{https://github.com/pierre-24/publi-ECOBAT-EI/}, or upon reasonable request to the authors.
+}
+
 		%%%END OF FOOTNOTES%%%
 		
 		%%%MAIN TEXT%%%%
@@ -246,7 +254,7 @@ where \ce{Ca_{(surf)}} represents the calcium electrode.
 After reduction, the \ce{Ca} is adsorbed on its surface.
 The electrochemical potential associated with this interfacial reaction is determined from the free electrochemical energies computed for both the oxidized (left-hand side) and reduced (right-hand side) species as a function of the electrode potential. The zero is given by the bare calcium surface (\ce{Ca_{(surf)}}) at its PZC. These results are shown in the top panel of Fig.~\ref{fig:platting}. The corresponding free energy curves exhibit the characteristic parabolic behavior described in previous studies \cite{hagopianInitioModellingInterfacial2021,hagopianAdvancementHomogeneousBackground2022}, with their intersection defining the equilibrium potential of the reaction. In the present case, the extrapolated crossing point yields an equilibrium potential of \SI{-3.4}{\volt} vs SHE. In other words, if $E^0_{rel} > \SI{3.4}{\volt}$, the \ce{Ca^2+} cation remain  solvated and in solution, while $E^0_{rel} \leq \SI{3.4}{\volt}$ corresponds to platting, where the now \ce{Ca^0} is adsorbed on the electrode.
 
-\begin{figure}[!hb]
+\begin{figure}[hb]
 	\centering
 	\includegraphics[width=\linewidth]{Figure1}
 	\caption{Free electrochemical energy ($F$, in \si{\electronvolt}, top panel) and excess number of electrons transferred to the electrode ($\Delta n_e'$, bottom panel), plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the reduced (blue) and oxidized (orange) calcium interfaces involved in the plating reaction.}
@@ -266,7 +274,7 @@ Using an equivalent computational framework and upon replacing THF with glyme (G
 A Fukui function analysis offers insight into the electronic redistribution associated with electron transfers. The nucleophilic Fukui function, defined as $f^+(\vec r) = \rho_{N+\Delta}(\vec  r) - \rho_N(\vec r)$ (here, $\Delta = \SI{0.4}{\elementarycharge}$), was evaluated at the onset potential and depicted in Fig.~\ref{fig:fukui}. In agreement with Ref.~\cite{nguyenSolvationReductionCoupling2023}, the resulting distribution of additional electron density is primarily localized around the \ce{Ca^{2+}} ion (in particular in its valence electron shells \cite{nguyenSolvationReductionCoupling2023}), but it also extends into the solvation shell. Notably, significant electron density accumulates on the THF molecule that is the farthest from the electrode surface, indicating a modification of the population of its molecular orbitals. This reorganization involves population of $\pi_{C-C}$, $\sigma^\star_{C-H}$ (bonding), and $\sigma^\star_{C-O}$ (antibonding) orbitals, suggesting a possible activation pathway that may lead to solvent decomposition.
 
 
-\begin{figure}[!h]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Figure2}
 	\caption{Fukui function ($f^+(\vec r)$, isocontour of \SI{e-4}{\elementarycharge\per\angstrom\cubed}) of \ce{[Ca(THF)_6]^2+} at the onset potential (\SI{-2.9}{\volt} vs SHE). The yellow (blue) area indicates accumulation (depletion) of electron density, respectively.}
@@ -282,7 +290,7 @@ Pathways include: {\begin{inparaenum}[(i)]
 The first degradation mechanism was originally proposed by Wang \textit{et al.}~\cite{wangPlatingStrippingCalcium2018}, based on experimental observations of the formation of \ce{CaH2} in the presence of \ce{BH4-}. Subsequent studies, however, demonstrated that similar decomposition pathways can also occur in THF even in the absence of electrochemical reactions~\cite{taUnderstandingCaElectrodeposition2019}. The second mechanism, involving the formation of non-cyclic unsaturated butanols, was identified through AIMD simulations by Pathreeker and Hosein~\cite{pathreekerWhyTetrahydrofuranGood2021}, and analogous degradation pathways have been reported in other solvents~\cite{yamijalaStabilityCalciumIon2021}. 
 In the present work, for intermediate \textbf{3a\textsubscript{1}}, a keto-enol tautomerization is considered, with the equilibrium favoring the keto form (\textbf{3a\textsubscript{1}'}). In contrast, the geometry optimization of \textbf{3a\textsubscript{2}} leads to the liberation of a OH moiety, that migrates on the \ce{Ca^2+} cation  (\textbf{3a\textsubscript{2}'}), which may contribute to the emergence of hydroxylated surface terminations \cite{fujimoriInteractionWaterCaO2016a}. Finally, the possibility of proton/hydride transfer to the calcium atom (\textbf{3b}$_x$), previously observed in AIMD simulations \cite{pathreekerWhyTetrahydrofuranGood2021}, is also investigated, as it could result in the formation of \ce{CaH2}. It is important to note that this contribution is limited to the initial stages of the reaction, particularly under the constraint of a constant number of atoms. Subsequent reactions between these primary products, and likely with the electrode surface, are known to yield smaller molecular fragments, including \ce{C2H4} and \ce{CO2} \cite{taUnderstandingCaElectrodeposition2019,melemedImpactDifferentialCa22023}.
 
-\begin{figure*}[!h]
+\begin{figure*}[h]
 	\centering
 	\includegraphics[width=.6\linewidth]{Figure3}
 	\caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the by Fukui analysis. During geometry optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganizes into \textbf{3a\textsubscript{2}'}.}
@@ -292,7 +300,7 @@ In the present work, for intermediate \textbf{3a\textsubscript{1}}, a keto-enol 
 
 Following geometry optimization of each solvated species, performed with the \texttt{Ca\_sv} pseudopotential to model calcium, the reaction energies for the reduction processes, along with the calcium–oxygen distances, are summarized in Table~\ref{tab:degrad}. The computed reaction energies confirm that all reduction pathways are energetically favorable. In particular, pathways involving proton transfer (\textbf{3b}$_x$) or the formation of hydroxylated species (\textbf{3a\textsubscript{2}'}) exhibit very negative $\Delta E_r$ values  ($< \SI{-4}{\electronvolt}$), smaller than the direct formation of \textbf{1}. 
 
-\begin{table}[!h]
+\begin{table}[h]
 	\centering
 	\begin{tabular}{>{\bfseries}lccc}
 		\hline
@@ -322,7 +330,7 @@ It should also be noted that with a $\Delta E_r$ of \SI{-2.20}{\electronvolt}, t
 All remaining decomposition reactions intersect the free energy curve of \textbf{1} at potentials above its onset, indicating their thermodynamic viability. Specifically, the formation of \textbf{2} occurs near \SI{-2.6}{\volt} vs SHE, while the remaining four pathways, including the proton transfer reactions forming \textbf{3b}$_x$ (in line with Ref.~\cite{pathreekerWhyTetrahydrofuranGood2021}), become favorable between \SI{-1.5}{\volt} and \SI{-1.0}{\volt} vs SHE.
 
 
-\begin{figure}[!h]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Figure4}
 	\caption{Free electrochemical energy ($F$, in \si{\electronvolt}) plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare Ca surface (blue, taken from Fig.~\ref{fig:platting}), solvated \ce{Ca^2+} (orange, taken from Fig.~\ref{fig:platting}), and the different degradation products. Products \textbf{3a\textsubscript{1}} and \textbf{3a\textsubscript{3}} are not represented on this graph (see text).}
@@ -336,7 +344,7 @@ Finally, an analysis of the formal charge of each solvated species, obtained via
 This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S2), which reveals notable contributions from $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. This orbital involvement suggests a hydride/proton transfer, consistent with the formation of \textbf{3b\textsubscript{1}}.
 
 
-\begin{figure}[!h]
+\begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{Figure5}
 \caption{Variation (with respect to the neutral species) of the formal charge of the solvated species (computed as $q = -\Delta n_e\{\text{species}\}$, as obtained by integrating the electron density in the different regions) plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the different degradation products. }
@@ -349,7 +357,7 @@ This proposed sequence is further supported by the analysis of the Fukui functio
 One of the main conclusions of the previous subsection is that the proton/hydride transfer reactions are thermodynamically favorable. Building on this scenario, also observed experimentally and computationally, in particular in the presence of \ce{BH4-} \cite{wangPlatingStrippingCalcium2018,taUnderstandingCaElectrodeposition2019,liepinyaComputationalComparisonEther2021,yamijalaStabilityCalciumIon2021,melemedImpactDifferentialCa22023}, a surface composed of calcium hydride (\ce{CaH2}) is now considered. The corresponding results are presented in Fig.~\ref{fig:cah2}. 
 Since \ce{CaH2} is a semiconductor, the free energy curve for the bare surface exhibits a discontinuity between approximately \SI{-0.5}{\volt} and \SI{-3.5}{\volt}. This interval lies near the potential of zero charge (PZC), where the surface remains nearly uncharged, in agreement with the behavior of a semiconductor. Outside this region, the system displays a metal-like (parabolic) response, corresponding to the unfilling of the valence band (VB, $E^0_{rel} > \SI{-1}{\volt}$) and to the filling of the the conduction band (CB, $E^0_{rel} < \SI{-3}{\volt}$). Similar behavior has been reported for cobalt oxide by Curutchet \textit{et al.} \cite{curutchetTwositesAreBetter2020}.
 
-\begin{figure}[!h]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Figure6}
 	\caption{Free electrochemical energy ($F$, in \si{\electronvolt}) as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare \ce{CaH2} surface (dark and light blue, see text), \ce{[Ca(THF)_6]^2+} (\textbf{1}, orange), and one decomposition product, \textbf{3b\textsubscript{1}}.}
