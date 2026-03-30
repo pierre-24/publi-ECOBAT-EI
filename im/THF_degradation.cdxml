@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE CDXML SYSTEM "http://www.cambridgesoft.com/xml/cdxml.dtd" >
+<!DOCTYPE CDXML SYSTEM "https://static.chemistry.revvitycloud.com/cdxml/CDXML.dtd" >
 <CDXML
- CreationProgram="ChemDraw 22.2.0.3300"
+ CreationProgram="ChemDraw 23.1.2.7"
  Name="THF_degradation.cdxml"
- BoundingBox="34.68 41.20 676.30 398.30"
- WindowPosition="0 -1073741824"
- WindowSize="-1073741824 -2147483648"
+ BoundingBox="34.68 43.06 717.01 396.46"
+ WindowPosition="0 0"
+ WindowSize="0 0"
  FractionalWidths="yes"
  InterpretChemically="yes"
  ShowAtomQuery="yes"
@@ -19,10 +19,11 @@
  ShowTerminalCarbonLabels="no"
  ShowNonTerminalCarbonLabels="no"
  HideImplicitHydrogens="no"
- LabelFont="3"
+ Magnification="701"
+ LabelFont="58"
  LabelSize="10"
  LabelFace="96"
- CaptionFont="3"
+ CaptionFont="58"
  CaptionSize="10"
  HashSpacing="2.50"
  MarginWidth="1.60"
@@ -40,7 +41,7 @@
  ResidueWrapCount="40"
  ResidueBlockCount="10"
  PrintMargins="36 36 36 36"
- MacPrintInfo="00030000025802580000000012961AA0FF9CFF9C12FA1B040365057B03DF00020000025802580000000012961AA0000100000064000000010001010100020001270F000100010000000000000000000000000002001901900000000000600000000000000000000100000000000000000000000000000000"
+ MacPrintInfo="000300000048004800000000023B0332FFF4FFF40247033E0365057B03DF000200000048004800000000023B0332000100000064000000010001010100000001270F000100010000000000000000000000000002001901900000000000400000000000000000000100000000000000000000000000000000"
  ChemPropName=""
  ChemPropFormula="Chemical Formula: "
  ChemPropExactMass="Exact Mass: "
@@ -58,10 +59,6 @@
  ChemPropHenry="Henry&apos;s Law: "
  ChemPropEForm="Heat of Form: "
  ChemProptPSA="tPSA: "
- ChemPropCLogP="CLogP: "
- ChemPropCMR="CMR: "
- ChemPropLogS="LogS: "
- ChemPropPKa="pKa: "
  ChemPropID=""
  ChemPropFragmentLabel=""
  color="0"
@@ -79,12 +76,13 @@
 <color r="0" g="1" b="1"/>
 <color r="0" g="0" b="1"/>
 <color r="1" g="0" b="1"/>
-<color r="0.7490" g="0.7490" b="0.7490"/>
+<color r="0.7451" g="0.7451" b="0.7451"/>
 </colortable><fonttable>
-<font id="3" charset="windows-1257" name="Arial"/>
+<font id="58" charset="x-mac-roman" name="Arial"/>
+<font id="60" charset="x-mac-roman" name="Arial Bold"/>
 </fonttable><page
- id="1271"
- BoundingBox="0 0 769.92 522.96"
+ id="1301"
+ BoundingBox="0 0 770 523"
  HeaderPosition="36"
  FooterPosition="36"
  PrintTrimMarks="yes"
@@ -92,28 +90,36 @@
  WidthPages="1"
 ><fragment
  id="8"
- BoundingBox="48.79 55.95 127.05 103.88"
+ BoundingBox="48.80 57.35 126.75 103.87"
  Z="1122"
 ><n
  id="5"
  p="52.88 81.75"
  Z="1120"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="1"
 /><n
  id="7"
  p="49.15 95.66"
  Z="1121"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="2"
 /><n
  id="9"
  p="61.22 103.50"
  Z="1123"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="3"
 /><n
  id="11"
  p="72.42 94.44"
  Z="1124"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="4"
 /><n
  id="13"
  p="67.26 81"
@@ -122,19 +128,21 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="5"
 ><t
- p="63.37 84.95"
- BoundingBox="63.37 76.90 71.15 85.05"
+ p="63.37 84.64"
+ BoundingBox="63.85 77.36 70.70 84.76"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="21"
  p="87.61 61.05"
  Z="1131"
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="6"
 ><fragment
- id="1272"
+ id="1302"
 ><n
  id="485"
  p="288.26 345.53"
@@ -143,11 +151,11 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="284.65 349.48"
- BoundingBox="284.65 341.43 297.43 349.58"
+ p="284.65 349.17"
+ BoundingBox="285.15 341.89 297.01 349.29"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca</s></t></n><n
  id="486"
  p="263 341.52"
  Z="689"
@@ -155,10 +163,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="259.11 345.47"
- BoundingBox="259.11 337.42 266.89 345.57"
+ p="259.11 345.16"
+ BoundingBox="259.59 337.88 266.44 345.28"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="487"
  p="274.61 349.96"
  Z="690"
@@ -182,10 +190,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="293.53 373.35"
- BoundingBox="293.53 365.30 301.31 373.45"
+ p="293.53 373.04"
+ BoundingBox="294.01 365.76 300.86 373.16"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="492"
  p="298.92 355.13"
  Z="695"
@@ -209,10 +217,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="244.65 403.18"
- BoundingBox="244.65 395.13 252.43 403.28"
+ p="244.65 402.87"
+ BoundingBox="245.13 395.59 251.98 402.99"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="497"
  p="260.15 407.67"
  Z="700"
@@ -236,10 +244,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="281.52 415.62"
- BoundingBox="281.52 407.57 289.30 415.72"
+ p="281.52 415.31"
+ BoundingBox="282 408.03 288.85 415.43"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="502"
  p="273.80 403.23"
  Z="705"
@@ -263,10 +271,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="326.26 398.36"
- BoundingBox="326.26 390.31 334.04 398.46"
+ p="326.26 398.05"
+ BoundingBox="326.74 390.77 333.59 398.17"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="507"
  p="334.59 408.06"
  Z="710"
@@ -423,13 +431,13 @@
  B="485"
  E="492"
 /></fragment><t
- p="84 65"
- BoundingBox="84 55.95 127.05 67.45"
+ p="84 64.63"
+ BoundingBox="84.50 57.35 126.75 66.84"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca(THF)5</s></t></n><b
+><s font="58" size="10" color="0" face="96">Ca(THF)5</s></t></n><b
  id="15"
  Z="1126"
  B="5"
@@ -470,7 +478,7 @@
  BS="N"
 /></fragment><fragment
  id="25"
- BoundingBox="556.07 157.95 676.30 200.12"
+ BoundingBox="556.07 155.94 675.88 200.12"
  Z="1133"
 ><n
  id="30"
@@ -481,12 +489,13 @@
  Charge="-1"
  NeedsClean="yes"
  AS="N"
+ AtomID="7"
 ><t
- p="589.74 182.12"
- BoundingBox="589.74 174.07 597.52 182.22"
+ p="589.74 181.81"
+ BoundingBox="590.22 174.53 597.07 181.93"
  LabelJustification="Left"
  LabelAlignment="Below"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="31"
  p="617.48 163.22"
  Z="1135"
@@ -494,8 +503,9 @@
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="8"
 ><fragment
- id="1273"
+ id="1303"
 ><n
  id="541"
  p="929.80 514.56"
@@ -505,11 +515,11 @@
  Charge="1"
  NeedsClean="yes"
 ><t
- p="926.19 518.51"
- BoundingBox="926.19 509.29 950.57 518.61"
+ p="926.19 518.56"
+ BoundingBox="926.69 507.70 950.16 518.68"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">CaH+</s></t></n><n
+><s font="58" size="10" color="0" face="96">CaH+</s></t></n><n
  id="542"
  p="904.55 510.56"
  Z="743"
@@ -517,10 +527,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="900.66 514.51"
- BoundingBox="900.66 506.46 908.44 514.61"
+ p="900.66 514.20"
+ BoundingBox="901.14 506.92 907.99 514.32"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="543"
  p="916.15 519"
  Z="744"
@@ -544,10 +554,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="951.86 519.34"
- BoundingBox="951.86 511.29 959.64 519.44"
+ p="951.86 519.03"
+ BoundingBox="952.34 511.75 959.19 519.15"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="548"
  p="967.36 523.82"
  Z="749"
@@ -571,10 +581,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="988.73 531.77"
- BoundingBox="988.73 523.72 996.51 531.87"
+ p="988.73 531.46"
+ BoundingBox="989.21 524.18 996.06 531.58"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="553"
  p="981.01 519.39"
  Z="754"
@@ -598,10 +608,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="1026.30 519.34"
- BoundingBox="1026.30 511.29 1034.08 519.44"
+ p="1026.30 519.03"
+ BoundingBox="1026.78 511.75 1033.63 519.15"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="558"
  p="1041.80 523.82"
  Z="759"
@@ -625,10 +635,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="1063.17 531.77"
- BoundingBox="1063.17 523.72 1070.95 531.87"
+ p="1063.17 531.46"
+ BoundingBox="1063.65 524.18 1070.50 531.58"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="563"
  p="1055.45 519.39"
  Z="764"
@@ -785,32 +795,39 @@
  B="541"
  E="543"
 /></fragment><t
- p="616.09 167.17"
- BoundingBox="616.09 157.95 676.30 169.45"
+ p="616.09 166.80"
+ BoundingBox="616.77 155.94 675.88 169.01"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">[CaH(THF)5]+</s></t></n><n
+><s font="58" size="10" color="0" face="96">[CaH(THF)5]+</s></t></n><n
  id="956"
  p="593.63 192.57"
  Z="1245"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="9"
 /><n
  id="958"
  p="581.16 199.77"
  Z="1247"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="10"
 /><n
  id="960"
  p="568.69 192.57"
  Z="1249"
  AS="N"
+ AtomID="11"
 /><n
  id="962"
  p="556.22 199.77"
  Z="1251"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="12"
 /><b
  id="41"
  Z="1136"
@@ -854,194 +871,201 @@
  SymbolType="Minus"
 ><represent attribute="Charge" object="30"/></graphic></fragment><fragment
  id="52"
- BoundingBox="560.14 240.27 655.55 303.80"
+ BoundingBox="622.03 238.26 717.01 303.80"
  Z="1140"
 ><n
  id="53"
- p="572.88 274.84"
+ p="634.76 274.84"
  Z="1138"
  AS="N"
+ AtomID="13"
 /><n
  id="54"
- p="560.45 282.01"
+ p="622.33 282.01"
  Z="1139"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="14"
 /><n
  id="55"
- p="560.45 296.36"
+ p="622.33 296.36"
  Z="1141"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="15"
 /><n
  id="56"
- p="572.88 260.49"
+ p="634.76 260.49"
  Z="1142"
  Element="8"
  NumHydrogens="0"
  Charge="-1"
  NeedsClean="yes"
  AS="N"
+ AtomID="16"
 ><t
- p="568.99 264.44"
- BoundingBox="568.99 256.39 576.77 264.54"
+ p="630.87 264.13"
+ BoundingBox="631.35 256.85 638.20 264.25"
  LabelJustification="Left"
  LabelAlignment="Below"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="57"
- p="596.73 245.54"
+ p="658.61 245.54"
  Z="1146"
  Warning="An atom in this label has an invalid valence."
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="17"
 ><fragment
- id="1274"
+ id="1304"
 ><n
  id="597"
- p="909.05 596.88"
+ p="970.93 596.88"
  Z="796"
  Element="20"
  NumHydrogens="1"
  Charge="1"
  NeedsClean="yes"
 ><t
- p="905.44 600.83"
- BoundingBox="905.44 591.61 929.82 600.93"
+ p="967.32 600.88"
+ BoundingBox="967.82 590.02 991.29 601"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">CaH+</s></t></n><n
+><s font="58" size="10" color="0" face="96">CaH+</s></t></n><n
  id="598"
- p="883.79 592.88"
+ p="945.67 592.88"
  Z="797"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="879.90 596.83"
- BoundingBox="879.90 588.78 887.68 596.93"
+ p="941.78 596.52"
+ BoundingBox="942.26 589.24 949.11 596.64"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="599"
- p="895.40 601.31"
+ p="957.28 601.31"
  Z="798"
 /><n
  id="600"
- p="872.18 601.31"
+ p="934.06 601.31"
  Z="799"
 /><n
  id="601"
- p="876.61 614.96"
+ p="938.49 614.96"
  Z="800"
 /><n
  id="602"
- p="890.96 614.96"
+ p="952.84 614.96"
  Z="801"
 /><n
  id="603"
- p="935.01 597.70"
+ p="996.89 597.70"
  Z="802"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="931.12 601.65"
- BoundingBox="931.12 593.60 938.90 601.75"
+ p="993 601.34"
+ BoundingBox="993.48 594.06 1000.33 601.46"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="604"
- p="946.62 606.14"
+ p="1008.50 606.14"
  Z="803"
 /><n
  id="605"
- p="923.40 606.14"
+ p="985.28 606.14"
  Z="804"
 /><n
  id="606"
- p="927.83 619.79"
+ p="989.71 619.79"
  Z="805"
 /><n
  id="607"
- p="942.18 619.79"
+ p="1004.06 619.79"
  Z="806"
 /><n
  id="608"
- p="971.87 610.14"
+ p="1033.75 610.14"
  Z="807"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="967.98 614.09"
- BoundingBox="967.98 606.04 975.76 614.19"
+ p="1029.86 613.78"
+ BoundingBox="1030.34 606.50 1037.19 613.90"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="609"
- p="960.26 601.70"
+ p="1022.14 601.70"
  Z="808"
 /><n
  id="610"
- p="983.48 601.70"
+ p="1045.36 601.70"
  Z="809"
 /><n
  id="611"
- p="979.05 588.06"
+ p="1040.93 588.06"
  Z="810"
 /><n
  id="612"
- p="964.70 588.06"
+ p="1026.58 588.06"
  Z="811"
 /><n
  id="613"
- p="1009.44 597.70"
+ p="1071.32 597.70"
  Z="812"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="1005.55 601.65"
- BoundingBox="1005.55 593.60 1013.33 601.75"
+ p="1067.43 601.34"
+ BoundingBox="1067.91 594.06 1074.76 601.46"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="614"
- p="1021.05 606.14"
+ p="1082.93 606.14"
  Z="813"
 /><n
  id="615"
- p="997.83 606.14"
+ p="1059.71 606.14"
  Z="814"
 /><n
  id="616"
- p="1002.27 619.79"
+ p="1064.15 619.79"
  Z="815"
 /><n
  id="617"
- p="1016.62 619.79"
+ p="1078.50 619.79"
  Z="816"
 /><n
  id="618"
- p="1046.31 610.14"
+ p="1108.19 610.14"
  Z="817"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="1042.42 614.09"
- BoundingBox="1042.42 606.04 1050.20 614.19"
+ p="1104.30 613.78"
+ BoundingBox="1104.78 606.50 1111.63 613.90"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="619"
- p="1034.70 601.70"
+ p="1096.58 601.70"
  Z="818"
 /><n
  id="620"
- p="1057.92 601.70"
+ p="1119.80 601.70"
  Z="819"
 /><n
  id="621"
- p="1053.48 588.06"
+ p="1115.36 588.06"
  Z="820"
 /><n
  id="622"
- p="1039.13 588.06"
+ p="1101.01 588.06"
  Z="821"
 /><b
  id="623"
@@ -1184,17 +1208,18 @@
  B="597"
  E="599"
 /></fragment><t
- p="595.34 249.49"
- BoundingBox="595.34 240.27 655.55 251.77"
+ p="657.22 249.12"
+ BoundingBox="657.90 238.26 717.01 251.33"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">[CaH(THF)5]+</s></t></n><n
+><s font="58" size="10" color="0" face="96">[CaH(THF)5]+</s></t></n><n
  id="59"
- p="572.88 303.54"
+ p="634.76 303.54"
  Z="1149"
  AS="N"
+ AtomID="18"
 /><b
  id="60"
  Z="1143"
@@ -1232,200 +1257,208 @@
  BS="N"
 /><graphic
  id="66"
- BoundingBox="572.88 252.76 565.38 252.76"
+ BoundingBox="634.76 252.76 627.26 252.76"
  Z="1148"
  GraphicType="Symbol"
  SymbolType="Minus"
 ><represent attribute="Charge" object="56"/></graphic></fragment><fragment
  id="67"
- BoundingBox="408.49 332.27 517.46 395.80"
+ BoundingBox="470.37 330.26 578.92 395.80"
  Z="1153"
 ><n
  id="68"
- p="434.79 366.84"
+ p="496.67 366.84"
  Z="1151"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="19"
 /><n
  id="69"
- p="422.36 374.01"
+ p="484.24 374.01"
  Z="1152"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="20"
 /><n
  id="70"
- p="422.36 388.36"
+ p="484.24 388.36"
  Z="1154"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="21"
 /><n
  id="71"
- p="434.79 352.49"
+ p="496.67 352.49"
  Z="1155"
  Element="8"
  NumHydrogens="0"
  Charge="-1"
  NeedsClean="yes"
  AS="N"
+ AtomID="22"
 ><t
- p="430.90 356.44"
- BoundingBox="430.90 348.39 438.68 356.54"
+ p="492.78 356.13"
+ BoundingBox="493.26 348.85 500.11 356.25"
  LabelJustification="Left"
  LabelAlignment="Below"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="72"
- p="458.64 337.54"
+ p="520.52 337.54"
  Z="1159"
  Warning="An atom in this label has an invalid valence."
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="23"
 ><fragment
- id="1275"
+ id="1305"
 ><n
  id="653"
- p="770.96 688.88"
+ p="832.84 688.88"
  Z="850"
  Element="20"
  NumHydrogens="1"
  Charge="1"
  NeedsClean="yes"
 ><t
- p="767.35 692.83"
- BoundingBox="767.35 683.61 791.73 692.93"
+ p="829.23 692.88"
+ BoundingBox="829.73 682.02 853.20 693"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">CaH+</s></t></n><n
+><s font="58" size="10" color="0" face="96">CaH+</s></t></n><n
  id="654"
- p="745.70 684.88"
+ p="807.58 684.88"
  Z="851"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="741.81 688.83"
- BoundingBox="741.81 680.78 749.59 688.93"
+ p="803.69 688.52"
+ BoundingBox="804.17 681.24 811.02 688.64"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="655"
- p="757.31 693.31"
+ p="819.19 693.31"
  Z="852"
 /><n
  id="656"
- p="734.09 693.31"
+ p="795.97 693.31"
  Z="853"
 /><n
  id="657"
- p="738.52 706.96"
+ p="800.40 706.96"
  Z="854"
 /><n
  id="658"
- p="752.87 706.96"
+ p="814.75 706.96"
  Z="855"
 /><n
  id="659"
- p="796.92 689.70"
+ p="858.80 689.70"
  Z="856"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="793.03 693.65"
- BoundingBox="793.03 685.60 800.81 693.75"
+ p="854.91 693.34"
+ BoundingBox="855.39 686.06 862.24 693.46"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="660"
- p="808.53 698.14"
+ p="870.41 698.14"
  Z="857"
 /><n
  id="661"
- p="785.31 698.14"
+ p="847.19 698.14"
  Z="858"
 /><n
  id="662"
- p="789.74 711.79"
+ p="851.62 711.79"
  Z="859"
 /><n
  id="663"
- p="804.09 711.79"
+ p="865.97 711.79"
  Z="860"
 /><n
  id="664"
- p="833.78 702.14"
+ p="895.66 702.14"
  Z="861"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="829.89 706.09"
- BoundingBox="829.89 698.04 837.67 706.19"
+ p="891.77 705.78"
+ BoundingBox="892.25 698.50 899.10 705.90"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="665"
- p="822.17 693.70"
+ p="884.05 693.70"
  Z="862"
 /><n
  id="666"
- p="845.39 693.70"
+ p="907.27 693.70"
  Z="863"
 /><n
  id="667"
- p="840.96 680.06"
+ p="902.84 680.06"
  Z="864"
 /><n
  id="668"
- p="826.61 680.06"
+ p="888.49 680.06"
  Z="865"
 /><n
  id="669"
- p="871.35 689.70"
+ p="933.23 689.70"
  Z="866"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="867.46 693.65"
- BoundingBox="867.46 685.60 875.24 693.75"
+ p="929.34 693.34"
+ BoundingBox="929.82 686.06 936.67 693.46"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="670"
- p="882.96 698.14"
+ p="944.84 698.14"
  Z="867"
 /><n
  id="671"
- p="859.74 698.14"
+ p="921.62 698.14"
  Z="868"
 /><n
  id="672"
- p="864.18 711.79"
+ p="926.06 711.79"
  Z="869"
 /><n
  id="673"
- p="878.53 711.79"
+ p="940.41 711.79"
  Z="870"
 /><n
  id="674"
- p="908.22 702.14"
+ p="970.10 702.14"
  Z="871"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="904.33 706.09"
- BoundingBox="904.33 698.04 912.11 706.19"
+ p="966.21 705.78"
+ BoundingBox="966.69 698.50 973.54 705.90"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="675"
- p="896.61 693.70"
+ p="958.49 693.70"
  Z="872"
 /><n
  id="676"
- p="919.83 693.70"
+ p="981.71 693.70"
  Z="873"
 /><n
  id="677"
- p="915.39 680.06"
+ p="977.27 680.06"
  Z="874"
 /><n
  id="678"
- p="901.04 680.06"
+ p="962.92 680.06"
  Z="875"
 /><b
  id="679"
@@ -1568,17 +1601,18 @@
  B="653"
  E="655"
 /></fragment><t
- p="457.25 341.49"
- BoundingBox="457.25 332.27 517.46 343.77"
+ p="519.13 341.12"
+ BoundingBox="519.81 330.26 578.92 343.33"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">[CaH(THF)5]+</s></t></n><n
+><s font="58" size="10" color="0" face="96">[CaH(THF)5]+</s></t></n><n
  id="74"
- p="409.93 395.54"
+ p="471.81 395.54"
  Z="1162"
  AS="N"
+ AtomID="24"
 /><b
  id="75"
  Z="1156"
@@ -1615,34 +1649,42 @@
  BS="N"
 /><graphic
  id="81"
- BoundingBox="434.79 344.76 427.29 344.76"
+ BoundingBox="496.67 344.76 489.17 344.76"
  Z="1161"
  GraphicType="Symbol"
  SymbolType="Minus"
 ><represent attribute="Charge" object="71"/></graphic></fragment><fragment
  id="104"
- BoundingBox="331.95 62.86 422.56 109.20"
+ BoundingBox="331.96 64.26 422.26 109.19"
  Z="1166"
 ><n
  id="105"
  p="338.99 85.78"
  Z="1164"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="25"
 /><n
  id="106"
  p="332.33 98.54"
  Z="1165"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="26"
 /><n
  id="107"
  p="342.41 108.82"
  Z="1167"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="27"
 /><n
  id="108"
  p="355.30 102.41"
  Z="1168"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="28"
 /><n
  id="109"
  p="353.19 88.17"
@@ -1651,11 +1693,12 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="29"
 ><t
- p="349.30 92.12"
- BoundingBox="349.30 84.07 357.08 92.22"
+ p="349.30 91.81"
+ BoundingBox="349.78 84.53 356.63 91.93"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="110"
  p="371.73 67.96"
  Z="1175"
@@ -1663,14 +1706,15 @@
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="30"
 ><t
- p="368.12 71.91"
- BoundingBox="368.12 62.86 422.56 74.36"
+ p="368.12 71.54"
+ BoundingBox="368.62 64.26 422.26 73.75"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">CaH2(THF)5</s></t></n><b
+><s font="58" size="10" color="0" face="96">CaH2(THF)5</s></t></n><b
  id="111"
  Z="1170"
  B="105"
@@ -1713,28 +1757,36 @@
  BS="N"
 /></fragment><fragment
  id="148"
- BoundingBox="213.04 49.70 291.30 97.63"
+ BoundingBox="213.05 51.10 291 97.62"
  Z="1179"
 ><n
  id="149"
  p="217.13 75.50"
  Z="1177"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="31"
 /><n
  id="150"
  p="213.40 89.41"
  Z="1178"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="32"
 /><n
  id="151"
  p="225.47 97.25"
  Z="1180"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="33"
 /><n
  id="152"
  p="236.67 88.19"
  Z="1181"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="34"
 /><n
  id="153"
  p="231.51 74.75"
@@ -1743,19 +1795,21 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="35"
 ><t
- p="227.62 78.70"
- BoundingBox="227.62 70.65 235.40 78.80"
+ p="227.62 78.39"
+ BoundingBox="228.10 71.11 234.95 78.51"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="154"
  p="251.86 54.80"
  Z="1188"
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="36"
 ><fragment
- id="1276"
+ id="1306"
 ><n
  id="709"
  p="290.51 332.53"
@@ -1764,11 +1818,11 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="286.90 336.48"
- BoundingBox="286.90 328.43 299.68 336.58"
+ p="286.90 336.17"
+ BoundingBox="287.40 328.89 299.26 336.29"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca</s></t></n><n
  id="710"
  p="265.25 328.52"
  Z="905"
@@ -1776,10 +1830,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="261.36 332.47"
- BoundingBox="261.36 324.42 269.14 332.57"
+ p="261.36 332.16"
+ BoundingBox="261.84 324.88 268.69 332.28"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="711"
  p="276.86 336.96"
  Z="906"
@@ -1803,10 +1857,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="295.78 360.35"
- BoundingBox="295.78 352.30 303.56 360.45"
+ p="295.78 360.04"
+ BoundingBox="296.26 352.76 303.11 360.16"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="716"
  p="301.17 342.13"
  Z="911"
@@ -1830,10 +1884,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="246.90 390.18"
- BoundingBox="246.90 382.13 254.68 390.28"
+ p="246.90 389.87"
+ BoundingBox="247.38 382.59 254.23 389.99"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="721"
  p="262.40 394.67"
  Z="916"
@@ -1857,10 +1911,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="283.77 402.62"
- BoundingBox="283.77 394.57 291.55 402.72"
+ p="283.77 402.31"
+ BoundingBox="284.25 395.03 291.10 402.43"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="726"
  p="276.05 390.23"
  Z="921"
@@ -1884,10 +1938,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="328.51 385.36"
- BoundingBox="328.51 377.31 336.29 385.46"
+ p="328.51 385.05"
+ BoundingBox="328.99 377.77 335.84 385.17"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="731"
  p="336.84 395.06"
  Z="926"
@@ -2044,13 +2098,13 @@
  B="709"
  E="716"
 /></fragment><t
- p="248.25 58.75"
- BoundingBox="248.25 49.70 291.30 61.20"
+ p="248.25 58.38"
+ BoundingBox="248.75 51.10 291 60.59"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca(THF)5</s></t></n><b
+><s font="58" size="10" color="0" face="96">Ca(THF)5</s></t></n><b
  id="212"
  Z="1183"
  B="149"
@@ -2091,13 +2145,15 @@
  BS="N"
 /></fragment><fragment
  id="226"
- BoundingBox="282.88 154.62 383.73 196.62"
+ BoundingBox="282.88 156.02 383.43 196.62"
  Z="1196"
 ><n
  id="227"
  p="320.44 189.07"
  Z="1195"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="37"
 /><n
  id="230"
  p="320.44 174.67"
@@ -2106,20 +2162,22 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="38"
 ><t
- p="316.55 178.62"
- BoundingBox="316.55 170.57 324.33 178.72"
+ p="316.55 178.31"
+ BoundingBox="317.03 171.03 323.88 178.43"
  LabelJustification="Left"
  LabelAlignment="Below"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="231"
  p="344.29 159.72"
  Z="1199"
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="39"
 ><fragment
- id="1277"
+ id="1307"
 ><n
  id="765"
  p="486.76 118.14"
@@ -2128,11 +2186,11 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="483.15 122.09"
- BoundingBox="483.15 114.04 495.93 122.19"
+ p="483.15 121.78"
+ BoundingBox="483.65 114.50 495.51 121.90"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca</s></t></n><n
  id="766"
  p="461.50 114.14"
  Z="959"
@@ -2140,10 +2198,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="457.61 118.09"
- BoundingBox="457.61 110.04 465.39 118.19"
+ p="457.61 117.78"
+ BoundingBox="458.09 110.50 464.94 117.90"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="767"
  p="473.11 122.57"
  Z="960"
@@ -2167,10 +2225,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="492.03 145.96"
- BoundingBox="492.03 137.91 499.81 146.06"
+ p="492.03 145.65"
+ BoundingBox="492.51 138.37 499.36 145.77"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="772"
  p="497.42 127.74"
  Z="965"
@@ -2194,10 +2252,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="443.15 175.79"
- BoundingBox="443.15 167.74 450.93 175.89"
+ p="443.15 175.48"
+ BoundingBox="443.63 168.20 450.48 175.60"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="777"
  p="458.65 180.28"
  Z="970"
@@ -2221,10 +2279,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="480.02 188.23"
- BoundingBox="480.02 180.18 487.80 188.33"
+ p="480.02 187.92"
+ BoundingBox="480.50 180.64 487.35 188.04"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="782"
  p="472.30 175.84"
  Z="975"
@@ -2248,10 +2306,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="524.76 170.97"
- BoundingBox="524.76 162.92 532.54 171.07"
+ p="524.76 170.66"
+ BoundingBox="525.24 163.38 532.09 170.78"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="787"
  p="533.09 180.67"
  Z="980"
@@ -2408,13 +2466,13 @@
  B="765"
  E="772"
 /></fragment><t
- p="340.68 163.67"
- BoundingBox="340.68 154.62 383.73 166.12"
+ p="340.68 163.30"
+ BoundingBox="341.18 156.02 383.43 165.51"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca(THF)5</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca(THF)5</s></t></n><n
  id="437"
  p="310.26 164.49"
  Z="1225"
@@ -2422,25 +2480,32 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="40"
 ><t
- p="306.65 168.44"
- BoundingBox="306.65 160.51 313.87 168.44"
+ p="306.65 168.07"
+ BoundingBox="307.45 160.91 313.07 168.07"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">H</s></t></n><n
+><s font="58" size="10" color="0" face="96">H</s></t></n><n
  id="448"
  p="307.97 196.27"
  Z="1231"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="41"
 /><n
  id="468"
  p="295.50 189.07"
  Z="1233"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="42"
 /><n
  id="476"
  p="283.03 196.27"
  Z="1235"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="43"
 /><b
  id="404"
  Z="1198"
@@ -2484,197 +2549,205 @@
  BS="N"
 /></fragment><fragment
  id="408"
- BoundingBox="280.72 237.44 357.80 300.80"
+ BoundingBox="343.40 238.84 419.38 300.80"
  Z="1203"
 ><n
  id="409"
- p="294.51 271.84"
+ p="356.39 271.84"
  Z="1201"
  color="10"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="44"
 /><n
  id="410"
- p="282.08 279.01"
+ p="343.96 279.01"
  Z="1202"
  color="10"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="45"
 /><n
  id="411"
- p="282.08 293.36"
+ p="343.96 293.36"
  Z="1204"
  color="10"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="46"
 /><n
  id="412"
- p="294.51 257.49"
+ p="356.39 257.49"
  Z="1205"
  color="10"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="47"
 ><t
- p="290.62 261.44"
- BoundingBox="290.62 253.39 298.40 261.54"
+ p="352.50 261.13"
+ BoundingBox="352.98 253.85 359.83 261.25"
  color="10"
  LabelJustification="Left"
  LabelAlignment="Below"
-><s font="3" size="10" color="10" face="96">O</s></t></n><n
+><s font="58" size="10" color="10" face="96">O</s></t></n><n
  id="413"
- p="318.36 242.54"
+ p="380.24 242.54"
  Z="1209"
  color="10"
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="48"
 ><fragment
- id="1278"
+ id="1308"
 ><n
  id="821"
- p="370.01 199.77"
+ p="431.89 199.77"
  Z="1012"
  Element="20"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="366.40 203.72"
- BoundingBox="366.40 195.67 379.18 203.82"
+ p="428.28 203.41"
+ BoundingBox="428.78 196.13 440.64 203.53"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca</s></t></n><n
  id="822"
- p="344.75 195.77"
+ p="406.63 195.77"
  Z="1013"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="340.86 199.72"
- BoundingBox="340.86 191.67 348.64 199.82"
+ p="402.74 199.41"
+ BoundingBox="403.22 192.13 410.07 199.53"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="823"
- p="356.36 204.20"
+ p="418.24 204.20"
  Z="1014"
 /><n
  id="824"
- p="333.14 204.20"
+ p="395.02 204.20"
  Z="1015"
 /><n
  id="825"
- p="337.57 217.85"
+ p="399.45 217.85"
  Z="1016"
 /><n
  id="826"
- p="351.92 217.85"
+ p="413.80 217.85"
  Z="1017"
 /><n
  id="827"
- p="379.17 223.64"
+ p="441.05 223.64"
  Z="1018"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="375.28 227.59"
- BoundingBox="375.28 219.54 383.06 227.69"
+ p="437.16 227.28"
+ BoundingBox="437.64 220 444.49 227.40"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="828"
- p="380.67 209.37"
+ p="442.55 209.37"
  Z="1019"
 /><n
  id="829"
- p="392.28 229.48"
+ p="454.16 229.48"
  Z="1020"
 /><n
  id="830"
- p="401.88 218.81"
+ p="463.76 218.81"
  Z="1021"
 /><n
  id="831"
- p="394.71 206.38"
+ p="456.59 206.38"
  Z="1022"
 /><n
  id="832"
- p="330.29 253.47"
+ p="392.17 253.47"
  Z="1023"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="326.40 257.42"
- BoundingBox="326.40 249.37 334.18 257.52"
+ p="388.28 257.11"
+ BoundingBox="388.76 249.83 395.61 257.23"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="833"
- p="341.90 261.91"
+ p="403.78 261.91"
  Z="1024"
 /><n
  id="834"
- p="318.68 261.91"
+ p="380.56 261.91"
  Z="1025"
 /><n
  id="835"
- p="323.12 275.56"
+ p="385 275.56"
  Z="1026"
 /><n
  id="836"
- p="337.47 275.56"
+ p="399.35 275.56"
  Z="1027"
 /><n
  id="837"
- p="367.16 265.91"
+ p="429.04 265.91"
  Z="1028"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="363.27 269.86"
- BoundingBox="363.27 261.81 371.05 269.96"
+ p="425.15 269.55"
+ BoundingBox="425.63 262.27 432.48 269.67"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="838"
- p="355.55 257.47"
+ p="417.43 257.47"
  Z="1029"
 /><n
  id="839"
- p="378.77 257.47"
+ p="440.65 257.47"
  Z="1030"
 /><n
  id="840"
- p="374.33 243.83"
+ p="436.21 243.83"
  Z="1031"
 /><n
  id="841"
- p="359.98 243.83"
+ p="421.86 243.83"
  Z="1032"
 /><n
  id="842"
- p="411.90 248.65"
+ p="473.78 248.65"
  Z="1033"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="408.01 252.60"
- BoundingBox="408.01 244.55 415.79 252.70"
+ p="469.89 252.29"
+ BoundingBox="470.37 245.01 477.22 252.41"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="843"
- p="416.34 262.30"
+ p="478.22 262.30"
  Z="1034"
 /><n
  id="844"
- p="397.55 248.65"
+ p="459.43 248.65"
  Z="1035"
 /><n
  id="845"
- p="393.12 262.30"
+ p="455 262.30"
  Z="1036"
 /><n
  id="846"
- p="404.73 270.73"
+ p="466.61 270.73"
  Z="1037"
 /><b
  id="847"
@@ -2817,34 +2890,37 @@
  B="821"
  E="828"
 /></fragment><t
- p="314.75 246.49"
- BoundingBox="314.75 237.44 357.80 248.94"
+ p="376.63 246.12"
+ BoundingBox="377.13 238.84 419.38 248.33"
  color="10"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="10" face="96">Ca(THF)5</s></t></n><n
+><s font="58" size="10" color="10" face="96">Ca(THF)5</s></t></n><n
  id="415"
- p="294.51 300.54"
+ p="356.39 300.54"
  Z="1211"
  color="10"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="49"
 /><n
  id="439"
- p="284.33 247.31"
+ p="346.21 247.31"
  Z="1227"
  color="10"
  Element="1"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="50"
 ><t
- p="280.72 251.26"
- BoundingBox="280.72 243.33 287.94 251.26"
+ p="342.60 250.89"
+ BoundingBox="343.40 243.73 349.01 250.89"
  color="10"
  LabelJustification="Left"
-><s font="3" size="10" color="10" face="96">H</s></t></n><b
+><s font="58" size="10" color="10" face="96">H</s></t></n><b
  id="416"
  Z="1206"
  color="10"
@@ -2893,191 +2969,199 @@
  BS="N"
 /></fragment><fragment
  id="422"
- BoundingBox="284.49 328.19 374.08 391.55"
+ BoundingBox="346.37 329.59 435.66 391.55"
  Z="1215"
 ><n
  id="423"
- p="310.79 362.59"
+ p="372.67 362.59"
  Z="1213"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="51"
 /><n
  id="424"
- p="298.36 369.76"
+ p="360.24 369.76"
  Z="1214"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="52"
 /><n
  id="425"
- p="298.36 384.11"
+ p="360.24 384.11"
  Z="1216"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="53"
 /><n
  id="426"
- p="310.79 348.24"
+ p="372.67 348.24"
  Z="1217"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="54"
 ><t
- p="306.90 352.19"
- BoundingBox="306.90 344.14 314.68 352.29"
+ p="368.78 351.88"
+ BoundingBox="369.26 344.60 376.11 352"
  LabelJustification="Left"
  LabelAlignment="Below"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="427"
- p="334.64 333.29"
+ p="396.52 333.29"
  Z="1221"
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="55"
 ><fragment
- id="1279"
+ id="1309"
 ><n
  id="877"
- p="292.51 254.52"
+ p="354.39 254.52"
  Z="1066"
  Element="20"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="288.90 258.47"
- BoundingBox="288.90 250.42 301.68 258.57"
+ p="350.78 258.16"
+ BoundingBox="351.28 250.88 363.14 258.28"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca</s></t></n><n
  id="878"
- p="267.25 250.52"
+ p="329.13 250.52"
  Z="1067"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="263.36 254.47"
- BoundingBox="263.36 246.42 271.14 254.57"
+ p="325.24 254.16"
+ BoundingBox="325.72 246.88 332.57 254.28"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="879"
- p="278.86 258.95"
+ p="340.74 258.95"
  Z="1068"
 /><n
  id="880"
- p="255.64 258.95"
+ p="317.52 258.95"
  Z="1069"
 /><n
  id="881"
- p="260.07 272.60"
+ p="321.95 272.60"
  Z="1070"
 /><n
  id="882"
- p="274.42 272.60"
+ p="336.30 272.60"
  Z="1071"
 /><n
  id="883"
- p="301.67 278.39"
+ p="363.55 278.39"
  Z="1072"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="297.78 282.34"
- BoundingBox="297.78 274.29 305.56 282.44"
+ p="359.66 282.03"
+ BoundingBox="360.14 274.75 366.99 282.15"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="884"
- p="303.17 264.12"
+ p="365.05 264.12"
  Z="1073"
 /><n
  id="885"
- p="314.78 284.23"
+ p="376.66 284.23"
  Z="1074"
 /><n
  id="886"
- p="324.38 273.56"
+ p="386.26 273.56"
  Z="1075"
 /><n
  id="887"
- p="317.21 261.13"
+ p="379.09 261.13"
  Z="1076"
 /><n
  id="888"
- p="252.79 308.22"
+ p="314.67 308.22"
  Z="1077"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="248.90 312.17"
- BoundingBox="248.90 304.12 256.68 312.27"
+ p="310.78 311.86"
+ BoundingBox="311.26 304.58 318.11 311.98"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="889"
- p="264.40 316.66"
+ p="326.28 316.66"
  Z="1078"
 /><n
  id="890"
- p="241.18 316.66"
+ p="303.06 316.66"
  Z="1079"
 /><n
  id="891"
- p="245.62 330.31"
+ p="307.50 330.31"
  Z="1080"
 /><n
  id="892"
- p="259.97 330.31"
+ p="321.85 330.31"
  Z="1081"
 /><n
  id="893"
- p="289.66 320.66"
+ p="351.54 320.66"
  Z="1082"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="285.77 324.61"
- BoundingBox="285.77 316.56 293.55 324.71"
+ p="347.65 324.30"
+ BoundingBox="348.13 317.02 354.98 324.42"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="894"
- p="278.05 312.22"
+ p="339.93 312.22"
  Z="1083"
 /><n
  id="895"
- p="301.27 312.22"
+ p="363.15 312.22"
  Z="1084"
 /><n
  id="896"
- p="296.83 298.58"
+ p="358.71 298.58"
  Z="1085"
 /><n
  id="897"
- p="282.48 298.58"
+ p="344.36 298.58"
  Z="1086"
 /><n
  id="898"
- p="334.40 303.40"
+ p="396.28 303.40"
  Z="1087"
  Element="8"
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="330.51 307.35"
- BoundingBox="330.51 299.30 338.29 307.45"
+ p="392.39 307.04"
+ BoundingBox="392.87 299.76 399.72 307.16"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="899"
- p="338.84 317.05"
+ p="400.72 317.05"
  Z="1088"
 /><n
  id="900"
- p="320.05 303.40"
+ p="381.93 303.40"
  Z="1089"
 /><n
  id="901"
- p="315.62 317.05"
+ p="377.50 317.05"
  Z="1090"
 /><n
  id="902"
- p="327.23 325.48"
+ p="389.11 325.48"
  Z="1091"
 /><b
  id="903"
@@ -3220,30 +3304,33 @@
  B="877"
  E="884"
 /></fragment><t
- p="331.03 337.24"
- BoundingBox="331.03 328.19 374.08 339.69"
+ p="392.91 336.87"
+ BoundingBox="393.41 329.59 435.66 339.08"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca(THF)5</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca(THF)5</s></t></n><n
  id="429"
- p="285.93 391.29"
+ p="347.81 391.29"
  Z="1223"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="56"
 /><n
  id="441"
- p="300.61 338.06"
+ p="362.49 338.06"
  Z="1229"
  Element="1"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="57"
 ><t
- p="297 342.01"
- BoundingBox="297 334.08 304.22 342.01"
+ p="358.88 341.64"
+ BoundingBox="359.68 334.48 365.29 341.64"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">H</s></t></n><b
+><s font="58" size="10" color="0" face="96">H</s></t></n><b
  id="430"
  Z="1218"
  B="423"
@@ -3285,58 +3372,70 @@
  BS="N"
 /></fragment><fragment
  id="1054"
- BoundingBox="377.87 248.24 420.97 285.98"
+ BoundingBox="440.55 248.24 482.04 285.97"
  Z="1264"
 ><n
  id="1055"
- p="395.83 260.81"
+ p="457.71 260.81"
  Z="1262"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="58"
 /><n
  id="1056"
- p="403.01 273.24"
+ p="464.89 273.24"
  Z="1263"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="59"
 /><n
  id="1057"
- p="395.83 285.67"
+ p="457.71 285.67"
  Z="1265"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="60"
 /><n
  id="1058"
- p="403.01 248.39"
+ p="464.89 248.39"
  Z="1266"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="61"
 /><n
  id="1115"
- p="381.48 285.67"
+ p="443.36 285.67"
  Z="1271"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="62"
 /><n
  id="1210"
- p="381.48 260.81"
+ p="443.36 260.81"
  Z="1347"
  Element="1"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="63"
 ><t
- p="377.87 264.76"
- BoundingBox="377.87 256.83 385.09 264.76"
+ p="439.75 264.39"
+ BoundingBox="440.55 257.23 446.16 264.39"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">H</s></t></n><n
+><s font="58" size="10" color="0" face="96">H</s></t></n><n
  id="1212"
- p="417.36 273.24"
+ p="479.24 273.24"
  Z="1349"
  Element="1"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="64"
 ><t
- p="413.75 277.19"
- BoundingBox="413.75 269.26 420.97 277.19"
+ p="475.63 276.82"
+ BoundingBox="476.43 269.66 482.04 276.82"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">H</s></t></n><b
+><s font="58" size="10" color="0" face="96">H</s></t></n><b
  id="1117"
  Z="1267"
  B="1055"
@@ -3378,32 +3477,35 @@
  LineType="Dashed"
  CurveType="2"
  ArrowheadType="Solid"
- CurvePoints="418.24 280.56 405.73 270.57 393.22 260.59 405.52 249.81 406.33 251.34 407.15 252.87"
+ CurvePoints="480.12 280.56 467.61 270.57 455.10 260.59 467.40 249.81 468.21 251.34 469.03 252.87"
 /></fragment><fragment
  id="1126"
- BoundingBox="402.77 243.12 503.40 265.56"
+ BoundingBox="464.65 240.93 565.04 265.56"
  Z="1274"
 ><n
  id="1059"
- p="432.02 248.22"
+ p="493.90 248.22"
  Z="1270"
  Warning="An atom in this label has an invalid valence."
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="65"
 ><t
- p="430.63 252.17"
- BoundingBox="430.63 243.12 503.40 254.62"
+ p="492.51 251.80"
+ BoundingBox="493.19 240.93 565.04 254.01"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">[Ca(OH)(THF)5]-</s></t></n><n
+><s font="58" size="10" color="0" face="96">[Ca(OH)(THF)5]-</s></t></n><n
  id="1214"
- p="411.38 259.13"
+ p="473.26 259.13"
  Z="1351"
+ Warning="This atom is very close to another atom or bond."
  Charge="1"
  AS="N"
+ AtomID="66"
 /><b
  id="1219"
  Z="1352"
@@ -3413,19 +3515,21 @@
  BS="N"
 /><graphic
  id="1131"
- BoundingBox="406.70 261.63 399.20 261.63"
+ BoundingBox="468.58 261.63 461.08 261.63"
  Z="1277"
  GraphicType="Symbol"
  SymbolType="CirclePlus"
 ><represent attribute="Charge" object="1214"/></graphic></fragment><fragment
  id="1132"
- BoundingBox="403.25 153.62 504.10 199.22"
+ BoundingBox="403.25 155.02 503.80 198.85"
  Z="1333"
 ><n
  id="1133"
  p="440.81 188.07"
  Z="1332"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="67"
 /><n
  id="1134"
  p="440.81 173.67"
@@ -3434,20 +3538,22 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="68"
 ><t
- p="436.92 177.62"
- BoundingBox="436.92 169.57 444.70 177.72"
+ p="436.92 177.31"
+ BoundingBox="437.40 170.03 444.25 177.43"
  LabelJustification="Left"
  LabelAlignment="Right"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="1135"
  p="464.66 158.72"
  Z="1336"
  NodeType="Unspecified"
  NeedsClean="yes"
  AS="N"
+ AtomID="69"
 ><fragment
- id="1280"
+ id="1310"
 ><n
  id="1137"
  p="607.13 117.14"
@@ -3456,11 +3562,11 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="603.52 121.09"
- BoundingBox="603.52 113.04 616.30 121.19"
+ p="603.52 120.78"
+ BoundingBox="604.02 113.50 615.88 120.90"
  LabelJustification="Left"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca</s></t></n><n
  id="1138"
  p="581.88 113.14"
  Z="1279"
@@ -3468,10 +3574,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="577.99 117.09"
- BoundingBox="577.99 109.04 585.77 117.19"
+ p="577.99 116.78"
+ BoundingBox="578.47 109.50 585.32 116.90"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="1139"
  p="593.48 121.57"
  Z="1280"
@@ -3495,10 +3601,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="612.40 144.96"
- BoundingBox="612.40 136.91 620.18 145.06"
+ p="612.40 144.65"
+ BoundingBox="612.88 137.37 619.73 144.77"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="1144"
  p="617.79 126.74"
  Z="1285"
@@ -3522,10 +3628,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="563.52 174.79"
- BoundingBox="563.52 166.74 571.30 174.89"
+ p="563.52 174.48"
+ BoundingBox="564 167.20 570.85 174.60"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="1149"
  p="579.02 179.28"
  Z="1290"
@@ -3549,10 +3655,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="600.39 187.23"
- BoundingBox="600.39 179.18 608.17 187.33"
+ p="600.39 186.92"
+ BoundingBox="600.87 179.64 607.72 187.04"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="1154"
  p="592.67 174.84"
  Z="1295"
@@ -3576,10 +3682,10 @@
  NumHydrogens="0"
  NeedsClean="yes"
 ><t
- p="645.13 169.97"
- BoundingBox="645.13 161.92 652.91 170.07"
+ p="645.13 169.66"
+ BoundingBox="645.61 162.38 652.46 169.78"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">O</s></t></n><n
+><s font="58" size="10" color="0" face="96">O</s></t></n><n
  id="1159"
  p="653.46 179.67"
  Z="1300"
@@ -3736,27 +3842,33 @@
  B="1137"
  E="1144"
 /></fragment><t
- p="461.05 162.67"
- BoundingBox="461.05 153.62 504.10 165.12"
+ p="461.05 162.30"
+ BoundingBox="461.55 155.02 503.80 164.51"
  LabelJustification="Left"
  LabelLineHeight="auto"
  LineHeight="auto"
  LabelAlignment="Left"
-><s font="3" size="10" color="0" face="96">Ca(THF)5</s></t></n><n
+><s font="58" size="10" color="0" face="96">Ca(THF)5</s></t></n><n
  id="1192"
  p="428.34 195.27"
  Z="1338"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="70"
 /><n
  id="1193"
  p="415.88 188.07"
  Z="1340"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="71"
 /><n
  id="1194"
  p="403.40 195.27"
  Z="1342"
+ Warning="This atom is very close to another atom or bond."
  AS="N"
+ AtomID="72"
 /><n
  id="1202"
  p="453.29 195.27"
@@ -3765,11 +3877,12 @@
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
+ AtomID="73"
 ><t
- p="449.68 199.22"
- BoundingBox="449.68 191.29 456.90 199.22"
+ p="449.68 198.85"
+ BoundingBox="450.48 191.69 456.10 198.85"
  LabelJustification="Left"
-><s font="3" size="10" color="0" face="96">H</s></t></n><b
+><s font="58" size="10" color="0" face="96">H</s></t></n><b
  id="1195"
  Z="1335"
  B="1134"
@@ -3814,98 +3927,98 @@
 /></fragment><t
  id="219"
  p="160.23 77"
- BoundingBox="160.23 67.95 182.47 79.45"
+ BoundingBox="160.79 66.23 182.23 77.12"
  Z="1191"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0">+ 2</s><s font="3" size="10" color="0" face="96">e-</s></t><t
+><s font="58" size="10" color="0">+ 2</s><s font="58" size="10" color="0" face="96">e-</s></t><t
  id="222"
  p="135.48 50.25"
- BoundingBox="135.48 41.20 146.88 52.70"
+ BoundingBox="135.77 43.06 146.32 50.25"
  Z="1194"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0">2+</s></t><t
+><s font="58" size="10" color="0">2+</s></t><t
  id="964"
  p="367.48 113"
- BoundingBox="367.48 103.95 373.24 115.45"
+ BoundingBox="367.73 105.81 372.54 113"
  Z="1253"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">2</s></t><t
+><s font="60" size="10" color="0" face="1">2</s></t><t
  id="965"
- p="312.23 394.25"
- BoundingBox="312.23 385.20 328.06 398.30"
+ p="374.11 394.25"
+ BoundingBox="374.48 387.06 389.08 396.46"
  Z="1254"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3a</s><s font="3" size="10" color="0" face="33">3</s></t><t
+><s font="60" size="10" color="0" face="1">3a</s><s font="60" size="10" color="0" face="33">3</s></t><t
  id="966"
- p="446.48 392"
- BoundingBox="446.48 382.95 462.31 394.45"
+ p="508.36 392"
+ BoundingBox="508.73 384.81 523.88 394.21"
  Z="1255"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3b</s><s font="3" size="10" color="0" face="97">3</s></t><t
+><s font="60" size="10" color="0" face="1">3b</s><s font="60" size="10" color="0" face="97">3</s></t><t
  id="972"
- p="315.98 301"
- BoundingBox="315.98 291.95 331.81 305.05"
+ p="377.86 301"
+ BoundingBox="378.23 293.81 392.78 303.12"
  Z="1256"
  color="10"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="10" face="1">3a</s><s font="3" size="10" color="10" face="33">2</s></t><t
+><s font="60" size="10" color="10" face="1">3a</s><s font="60" size="10" color="10" face="33">2</s></t><t
  id="973"
- p="586.60 294.75"
- BoundingBox="586.60 285.70 602.43 297.20"
+ p="648.48 294.75"
+ BoundingBox="648.85 287.56 663.94 296.87"
  Z="1257"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3b</s><s font="3" size="10" color="0" face="97">2</s></t><t
+><s font="60" size="10" color="0" face="1">3b</s><s font="60" size="10" color="0" face="97">2</s></t><t
  id="974"
  p="305.48 216.75"
- BoundingBox="305.48 207.70 321.31 220.80"
+ BoundingBox="305.86 209.56 319.55 218.87"
  Z="1258"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3a</s><s font="3" size="10" color="0" face="33">1</s></t><t
+><s font="60" size="10" color="0" face="1">3a</s><s font="60" size="10" color="0" face="33">1</s></t><t
  id="975"
  p="607.15 206.50"
- BoundingBox="607.15 197.45 622.98 208.95"
+ BoundingBox="607.53 199.31 621.77 208.62"
  Z="1259"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3b</s><s font="3" size="10" color="0" face="97">1</s></t><t
+><s font="60" size="10" color="0" face="1">3b</s><s font="60" size="10" color="0" face="97">1</s></t><t
  id="995"
  p="84.76 122.99"
- BoundingBox="84.76 111.21 99.36 125.38"
+ BoundingBox="85.55 112.22 98.56 122.99"
  Z="1260"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">1</s><s font="3" size="10" color="0" face="65">2+</s></t><t
+><s font="60" size="10" color="0" face="1">1</s><s font="60" size="10" color="0" face="65">2+</s></t><t
  id="996"
  p="237.11 106.01"
- BoundingBox="237.11 96.96 242.87 108.46"
+ BoundingBox="237.90 98.82 241.05 106.01"
  Z="1261"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">1</s></t><t
+><s font="60" size="10" color="0" face="1">1</s></t><t
  id="1123"
- p="411.48 303.13"
- BoundingBox="411.48 294.08 429.42 307.18"
+ p="473.36 303.13"
+ BoundingBox="473.73 295.94 490.60 305.25"
  Z="1273"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3a</s><s font="3" size="10" color="0" face="33">2</s><s font="3" size="10" color="0" face="1">&apos;</s></t><t
+><s font="60" size="10" color="0" face="1">3a</s><s font="60" size="10" color="0" face="33">2</s><s font="60" size="10" color="0" face="1">&apos;</s></t><t
  id="1201"
  p="425.85 215.75"
- BoundingBox="425.85 206.70 443.79 219.80"
+ BoundingBox="426.23 208.56 443.09 217.87"
  Z="1344"
  Warning="Chemical Interpretation is not possible for this label"
  LineHeight="auto"
-><s font="3" size="10" color="0" face="1">3a</s><s font="3" size="10" color="0" face="33">1</s><s font="3" size="10" color="0" face="1">&apos;</s></t><graphic
- id="1259"
- SupersededBy="1281"
+><s font="60" size="10" color="0" face="1">3a</s><s font="60" size="10" color="0" face="33">1</s><s font="60" size="10" color="0" face="1">&apos;</s></t><graphic
+ id="1281"
+ SupersededBy="1311"
  BoundingBox="201.10 85.25 152.73 85.25"
  Z="1190"
  GraphicType="Line"
@@ -3926,163 +4039,205 @@
  BracketType="Square"
  LipSize="60"
 /><graphic
- id="1260"
- SupersededBy="1282"
+ id="1282"
+ SupersededBy="1312"
  BoundingBox="307.96 91 265.98 91"
  Z="1237"
  GraphicType="Line"
  ArrowType="FullHead"
  HeadSize="2250"
 /><graphic
- id="1261"
- SupersededBy="1283"
- BoundingBox="221.85 363.38 221.85 108.75"
+ id="1283"
+ SupersededBy="1313"
+ BoundingBox="222.60 183.94 221.85 108.75"
  Z="1238"
  GraphicType="Line"
  ArrowType="FullHead"
  HeadSize="1000"
 /><graphic
- id="1262"
- SupersededBy="1284"
- BoundingBox="269.48 363.19 221.85 363.19"
- Z="1239"
- GraphicType="Line"
- ArrowType="FullHead"
- HeadSize="2250"
-/><graphic
- id="1263"
- SupersededBy="1285"
- BoundingBox="269.29 270.94 221.67 270.94"
- Z="1240"
- GraphicType="Line"
- ArrowType="FullHead"
- HeadSize="2250"
-/><graphic
- id="1264"
- SupersededBy="1286"
+ id="1286"
+ SupersededBy="1314"
  BoundingBox="270.23 183.94 222.60 183.94"
  Z="1241"
  GraphicType="Line"
  ArrowType="FullHead"
  HeadSize="2250"
 /><graphic
- id="1265"
- SupersededBy="1287"
- BoundingBox="393.60 366.94 345.98 366.94"
+ id="1287"
+ SupersededBy="1315"
+ BoundingBox="455.48 366.94 407.86 366.94"
  Z="1242"
  GraphicType="Line"
  ArrowType="FullHead"
  HeadSize="2250"
 /><graphic
- id="1266"
- SupersededBy="1288"
- BoundingBox="532.04 278.69 484.41 278.69"
+ id="1288"
+ SupersededBy="1316"
+ BoundingBox="593.92 278.69 546.29 278.69"
  Z="1243"
  GraphicType="Line"
  ArrowType="FullHead"
  HeadSize="2250"
 /><graphic
- id="1267"
- SupersededBy="1289"
+ id="1289"
+ SupersededBy="1317"
  BoundingBox="543.77 183.44 496.15 183.44"
  Z="1244"
  GraphicType="Line"
  ArrowType="FullHead"
  HeadSize="2250"
 /><graphic
- id="1268"
- SupersededBy="1290"
+ id="1290"
+ SupersededBy="1318"
  BoundingBox="382.14 193.25 343.75 193.25"
  Z="1353"
  GraphicType="Line"
  ArrowType="Equilibrium"
  HeadSize="1500"
 /><graphic
- id="1269"
- SupersededBy="1291"
- BoundingBox="364.16 276 324.50 276"
+ id="1291"
+ SupersededBy="1319"
+ BoundingBox="426.04 276 386.38 276"
  Z="1354"
  GraphicType="Line"
  ArrowType="Equilibrium"
  HeadSize="1500"
+/><graphic
+ id="1294"
+ SupersededBy="1320"
+ BoundingBox="303.97 273.30 303.69 227.41"
+ Z="1357"
+ GraphicType="Line"
+ ArrowType="FullHead"
+ HeadSize="1000"
+/><graphic
+ id="1295"
+ SupersededBy="1321"
+ BoundingBox="334.82 273.30 303.97 273.30"
+ Z="1358"
+ GraphicType="Line"
+ ArrowType="FullHead"
+ HeadSize="2250"
+/><graphic
+ id="1298"
+ SupersededBy="1322"
+ BoundingBox="304.55 366.72 303.97 273.30"
+ Z="1361"
+ GraphicType="Line"
+ ArrowType="FullHead"
+ HeadSize="1000"
+/><graphic
+ id="1299"
+ SupersededBy="1323"
+ BoundingBox="335.52 366.72 304.55 366.72"
+ Z="1362"
+ GraphicType="Line"
+ ArrowType="FullHead"
+ HeadSize="2250"
 /><curve
  id="1128"
  Z="1275"
  ArrowheadType="Solid"
 /><scheme
- id="1292"
+ id="1324"
 ><step
- id="1293"
+ id="1325"
  ReactionStepReactants="8"
  ReactionStepProducts="148"
- ReactionStepArrows="1259"
+ ReactionStepArrows="1281"
  ReactionStepObjectsAboveArrow="219"
 /><step
- id="1294"
+ id="1326"
  ReactionStepReactants="148"
- ReactionStepProducts="67"
- ReactionStepArrows="1261"
+ ReactionStepProducts="408"
+ ReactionStepArrows="1283"
 /><step
- id="1295"
+ id="1327"
  ReactionStepReactants="148"
  ReactionStepProducts="104"
- ReactionStepArrows="1260"
+ ReactionStepArrows="1282"
 /><step
- id="1296"
+ id="1328"
+ ReactionStepReactants="408"
+ ReactionStepArrows="1298"
+/><step
+ id="1329"
+ ReactionStepReactants="408"
+ ReactionStepProducts="1054 1126"
+ ReactionStepArrows="1291"
+/><step
+ id="1330"
  ReactionStepReactants="104"
  ReactionStepProducts="226"
- ReactionStepArrows="1264"
+ ReactionStepArrows="1286"
 /><step
- id="1297"
- ReactionStepReactants="226"
- ReactionStepProducts="1132"
- ReactionStepArrows="1268"
-/><step
- id="1298"
- ReactionStepReactants="1132"
+ id="1331"
+ ReactionStepReactants="104 226 1132"
  ReactionStepProducts="25"
- ReactionStepArrows="1267"
-/></scheme><scheme
- id="1299"
-><step
- id="1300"
- ReactionStepProducts="408"
- ReactionStepArrows="1263"
+ ReactionStepArrows="1289"
 /><step
- id="1301"
- ReactionStepReactants="408"
- ReactionStepProducts="25 1054 1126"
- ReactionStepArrows="1269"
-/></scheme><scheme
- id="1302"
-><step
- id="1303"
- ReactionStepReactants="1054 1126"
- ReactionStepProducts="52"
- ReactionStepArrows="1266"
-/></scheme><scheme
- id="1304"
-><step
- id="1305"
+ id="1332"
+ ReactionStepReactants="226"
+ ReactionStepProducts="104 1132"
+ ReactionStepArrows="1290"
+/><step
+ id="1333"
+ ReactionStepReactants="226"
  ReactionStepProducts="422"
- ReactionStepArrows="1262"
+ ReactionStepArrows="1294"
 /><step
- id="1306"
+ id="1334"
  ReactionStepReactants="422"
  ReactionStepProducts="67"
- ReactionStepArrows="1265"
+ ReactionStepArrows="1287"
+/><step
+ id="1335"
+ ReactionStepReactants="1054 1126"
+ ReactionStepProducts="52"
+ ReactionStepArrows="1288"
+/></scheme><scheme
+ id="1336"
+><step
+ id="1337"
+ ReactionStepProducts="408"
+ ReactionStepArrows="1295"
+/><step
+ id="1338"
+ ReactionStepReactants="408"
+ ReactionStepArrows="1298"
+/><step
+ id="1339"
+ ReactionStepReactants="408"
+ ReactionStepProducts="1054 1126"
+ ReactionStepArrows="1291"
+/><step
+ id="1340"
+ ReactionStepReactants="1054 1126"
+ ReactionStepProducts="52"
+ ReactionStepArrows="1288"
+/></scheme><scheme
+ id="1341"
+><step
+ id="1342"
+ ReactionStepProducts="422"
+ ReactionStepArrows="1299"
+/><step
+ id="1343"
+ ReactionStepReactants="422"
+ ReactionStepProducts="67"
+ ReactionStepArrows="1287"
 /></scheme><bracketedgroup
- id="1307"
+ id="1344"
  BracketedObjectIDs="5 7 9 11 13 21"
 ><bracketattachment
- id="1308"
+ id="1345"
  GraphicID="221"
 /><bracketattachment
- id="1309"
+ id="1346"
  GraphicID="220"
 /></bracketedgroup><arrow
- id="1281"
- BoundingBox="152.73 81.12 201.10 88.63"
+ id="1311"
+ BoundingBox="152.73 81.17 201.10 88.63"
  Z="1190"
  FillType="None"
  ArrowheadHead="Full"
@@ -4096,8 +4251,8 @@
  MajorAxisEnd3D="325.85 127.88 0"
  MinorAxisEnd3D="277.47 176.25 0"
 /><arrow
- id="1282"
- BoundingBox="265.98 86.87 307.96 94.38"
+ id="1312"
+ BoundingBox="265.98 86.92 307.96 94.38"
  Z="1237"
  FillType="None"
  ArrowheadHead="Full"
@@ -4111,8 +4266,8 @@
  MajorAxisEnd3D="467.17 146.87 0"
  MinorAxisEnd3D="425.18 215.81 0"
 /><arrow
- id="1283"
- BoundingBox="219.90 108.75 223.05 363.38"
+ id="1313"
+ BoundingBox="221.40 108.75 223.80 184.49"
  Z="1238"
  FillType="None"
  ArrowheadHead="Full"
@@ -4120,44 +4275,14 @@
  HeadSize="25"
  ArrowheadCenterSize="22"
  ArrowheadWidth="200"
- Head3D="221.85 363.38 0"
+ Head3D="222.60 183.94 0"
  Tail3D="221.85 108.75 0"
- Center3D="332.77 417.75 0"
- MajorAxisEnd3D="587.40 417.75 0"
- MinorAxisEnd3D="332.77 672.38 0"
+ Center3D="333.52 238.31 0"
+ MajorAxisEnd3D="408.72 238.31 0"
+ MinorAxisEnd3D="333.52 313.51 0"
 /><arrow
- id="1284"
- BoundingBox="221.85 359.06 269.48 366.57"
- Z="1239"
- FillType="None"
- ArrowheadHead="Full"
- ArrowheadType="Solid"
- HeadSize="2250"
- ArrowheadCenterSize="1969"
- ArrowheadWidth="563"
- Head3D="269.48 363.19 0"
- Tail3D="221.85 363.19 0"
- Center3D="377.10 551.63 0"
- MajorAxisEnd3D="424.73 551.63 0"
- MinorAxisEnd3D="377.10 599.25 0"
-/><arrow
- id="1285"
- BoundingBox="221.67 266.81 269.29 274.32"
- Z="1240"
- FillType="None"
- ArrowheadHead="Full"
- ArrowheadType="Solid"
- HeadSize="2250"
- ArrowheadCenterSize="1969"
- ArrowheadWidth="563"
- Head3D="269.29 270.94 0"
- Tail3D="221.67 270.94 0"
- Center3D="376.92 459.38 0"
- MajorAxisEnd3D="424.54 459.38 0"
- MinorAxisEnd3D="376.92 507 0"
-/><arrow
- id="1286"
- BoundingBox="222.60 179.81 270.23 187.32"
+ id="1314"
+ BoundingBox="222.60 179.86 270.23 187.32"
  Z="1241"
  FillType="None"
  ArrowheadHead="Full"
@@ -4171,8 +4296,8 @@
  MajorAxisEnd3D="425.48 372.38 0"
  MinorAxisEnd3D="377.85 420 0"
 /><arrow
- id="1287"
- BoundingBox="345.98 362.81 393.60 370.32"
+ id="1315"
+ BoundingBox="407.86 362.86 455.48 370.32"
  Z="1242"
  FillType="None"
  ArrowheadHead="Full"
@@ -4180,14 +4305,14 @@
  HeadSize="2250"
  ArrowheadCenterSize="1969"
  ArrowheadWidth="563"
- Head3D="393.60 366.94 0"
- Tail3D="345.98 366.94 0"
- Center3D="501.23 555.38 0"
- MajorAxisEnd3D="548.85 555.38 0"
- MinorAxisEnd3D="501.23 603 0"
+ Head3D="455.48 366.94 0"
+ Tail3D="407.86 366.94 0"
+ Center3D="563.11 555.38 0"
+ MajorAxisEnd3D="610.73 555.38 0"
+ MinorAxisEnd3D="563.11 603 0"
 /><arrow
- id="1288"
- BoundingBox="484.41 274.56 532.04 282.07"
+ id="1316"
+ BoundingBox="546.29 274.61 593.92 282.07"
  Z="1243"
  FillType="None"
  ArrowheadHead="Full"
@@ -4195,14 +4320,14 @@
  HeadSize="2250"
  ArrowheadCenterSize="1969"
  ArrowheadWidth="563"
- Head3D="532.04 278.69 0"
- Tail3D="484.41 278.69 0"
- Center3D="639.66 467.13 0"
- MajorAxisEnd3D="687.29 467.13 0"
- MinorAxisEnd3D="639.66 514.75 0"
+ Head3D="593.92 278.69 0"
+ Tail3D="546.29 278.69 0"
+ Center3D="701.54 467.13 0"
+ MajorAxisEnd3D="749.17 467.13 0"
+ MinorAxisEnd3D="701.54 514.75 0"
 /><arrow
- id="1289"
- BoundingBox="496.15 179.31 543.77 186.82"
+ id="1317"
+ BoundingBox="496.15 179.36 543.77 186.82"
  Z="1244"
  FillType="None"
  ArrowheadHead="Full"
@@ -4216,8 +4341,8 @@
  MajorAxisEnd3D="699.02 371.88 0"
  MinorAxisEnd3D="651.40 419.50 0"
 /><arrow
- id="1290"
- BoundingBox="343.75 189.35 382.14 197.15"
+ id="1318"
+ BoundingBox="343.75 189.39 382.14 197.11"
  Z="1353"
  FillType="None"
  ArrowheadHead="HalfLeft"
@@ -4234,8 +4359,8 @@
  MajorAxisEnd3D="651.14 386 0"
  MinorAxisEnd3D="612.75 414.80 0"
 /><arrow
- id="1291"
- BoundingBox="324.50 272.10 364.16 279.90"
+ id="1319"
+ BoundingBox="386.38 272.14 426.04 279.86"
  Z="1354"
  FillType="None"
  ArrowheadHead="HalfLeft"
@@ -4246,9 +4371,69 @@
  ArrowheadWidth="375"
  ArrowShaftSpacing="300"
  ArrowEquilibriumRatio="300"
- Head3D="364.16 276 0"
- Tail3D="324.50 276 0"
- Center3D="596.87 414.25 0"
- MajorAxisEnd3D="636.53 414.25 0"
- MinorAxisEnd3D="596.87 443.05 0"
+ Head3D="426.04 276 0"
+ Tail3D="386.38 276 0"
+ Center3D="658.75 414.25 0"
+ MajorAxisEnd3D="698.41 414.25 0"
+ MinorAxisEnd3D="658.75 443.05 0"
+/><arrow
+ id="1320"
+ BoundingBox="302.77 227.41 305.17 273.85"
+ Z="1357"
+ FillType="None"
+ ArrowheadHead="Full"
+ ArrowheadType="Solid"
+ HeadSize="25"
+ ArrowheadCenterSize="22"
+ ArrowheadWidth="200"
+ Head3D="303.97 273.30 0"
+ Tail3D="303.69 227.41 0"
+ Center3D="346.01 306.48 0"
+ MajorAxisEnd3D="374.51 306.48 0"
+ MinorAxisEnd3D="346.01 352.37 0"
+/><arrow
+ id="1321"
+ BoundingBox="303.97 269.22 334.82 276.68"
+ Z="1358"
+ FillType="None"
+ ArrowheadHead="Full"
+ ArrowheadType="Solid"
+ HeadSize="2250"
+ ArrowheadCenterSize="1969"
+ ArrowheadWidth="563"
+ Head3D="334.82 273.30 0"
+ Tail3D="303.97 273.30 0"
+ Center3D="486.80 409.95 0"
+ MajorAxisEnd3D="517.65 409.95 0"
+ MinorAxisEnd3D="486.80 459.61 0"
+/><arrow
+ id="1322"
+ BoundingBox="303.35 273.30 305.75 367.28"
+ Z="1361"
+ FillType="None"
+ ArrowheadHead="Full"
+ ArrowheadType="Solid"
+ HeadSize="25"
+ ArrowheadCenterSize="22"
+ ArrowheadWidth="200"
+ Head3D="304.55 366.72 0"
+ Tail3D="303.97 273.30 0"
+ Center3D="390.48 434.29 0"
+ MajorAxisEnd3D="448.74 434.29 0"
+ MinorAxisEnd3D="390.48 527.71 0"
+/><arrow
+ id="1323"
+ BoundingBox="304.55 362.64 335.52 370.11"
+ Z="1362"
+ FillType="None"
+ ArrowheadHead="Full"
+ ArrowheadType="Solid"
+ HeadSize="2250"
+ ArrowheadCenterSize="1969"
+ ArrowheadWidth="563"
+ Head3D="335.52 366.72 0"
+ Tail3D="304.55 366.72 0"
+ Center3D="304.55 366.72 0"
+ MajorAxisEnd3D="329.69 366.72 0"
+ MinorAxisEnd3D="304.55 407.04 0"
 /></page></CDXML>
