@@ -181,8 +181,9 @@
 \footnotetext{%
 	\dag~Supplementary Information available: \begin{inparaenum}[(i)]
 		\item the spatial arrangement of the slabs,
-		\item Fukui functions for \textbf{3a\textsubscript{1}'}, and
-		\item calcium--oxygen distances for the compounds in Table~\ref{tab:degrad}.
+		\item calcium--oxygen distances for the compounds in Table~\ref{tab:degrad},
+		\item Bader charge analysis, and
+		\item Fukui functions for \textbf{3a\textsubscript{1}'}.
 	\end{inparaenum}
 	Further data (structures, raw values, and analysis scripts) underlying this study are openly available on GitHub at \url{https://github.com/pierre-24/publi-ECOBAT-EI/}, or upon reasonable request from the authors.
 }
@@ -357,7 +358,9 @@ Subsequent reactions between these primary products, and likely with the electro
 \begin{figure*}[h]
 	\centering
 	\includegraphics[width=.6\linewidth]{Figure3}
-	\caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the by Fukui analysis. During geometry optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganizes into \textbf{3a\textsubscript{2}'}.}
+\caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the Fukui analysis. 
+	During geometry optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganizes into \textbf{3a\textsubscript{2}'}.  
+	The formal charges mirror the Bader charge analysis (Fig.~S2).}
 	\label{fig:THFdeg}
 \end{figure*}
 
@@ -387,12 +390,13 @@ Following geometry optimization of each solvated species, the reaction energies 
 	\label{tab:degrad}
 \end{table}
 
-The evolution of the Ca--O distances further highlights the amplitude  of the degradation on the solvation environment. The addition of two electrons to the solvated calcium complex  induces only minimal changes to all Ca--O[THF] bond lengths, but increases Ca--O[X] (\textbf{1\textsuperscript{2+}} versus \textbf{1}). 
-However,  the subsequent  reorganization steps  to form \textbf{2} and \textbf{3} these distances increase by at least \SI{0.2}{\angstrom}, indicating a destabilization of the first solvation shell. 
-The same destabilization was observed by Nguyen \textit{et al.} for glyme (G4) \cite{nguyenSolvationReductionCoupling2023}.
-In some cases, such as \textbf{3a\textsubscript{2}'} and \textbf{3b}$_x$, the number of coordinating THF molecules decreases, and one or more Ca--O[THF] distance elongates beyond \SI{2.65}{\angstrom} (Table S1), effectively excluding these solvent molecules from the immediate coordination sphere, which translates into an increase of  the standard deviation on Ca--O[THF]. 
-Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in this case), the degradation products tend to coordinate more closely to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), especially when they carry a formal charge of -1 (\textbf{3b}$_x$) or +1 (\textbf{3a\textsubscript{2}'}). 
-These findings suggest that, upon calcium deposition at the electrode surface (formation of the SEI), the corresponding degradation products are likely to remain associated with the metal center and to contribute to the surface passivation. 
+The evolution of the Ca--O distances further highlights the extent of the degradation of the solvation environment. The addition of two electrons to the solvated calcium complex induces only minimal changes in the Ca--O[THF] bond lengths, but increases the Ca--O[X] distance (\textbf{1\textsuperscript{2+}} versus \textbf{1}).  
+A charge analysis (Fig.~S2) reveals that \ce{Ca} retains its positive charge, while the two extra electrons are distributed over the neighboring THF molecules.  
+However, upon subsequent reorganization to form \textbf{2} and \textbf{3}, these distances increase by at least \SI{0.2}{\angstrom}, indicating a destabilization of the first solvation shell.  
+Note that similar destabilizations were observed by Nguyen \textit{et al.} for glyme (G4)\cite{nguyenSolvationReductionCoupling2023}.
+In some cases, such as \textbf{3a\textsubscript{2}'} and \textbf{3b}$_x$, the number of coordinating THF molecules decreases, and one or more Ca--O[THF] distances elongate beyond \SI{2.65}{\angstrom} (Table~S1), effectively excluding these solvent molecules from the immediate coordination sphere. This results in an increase in the standard deviation of the Ca--O[THF] distances.  
+Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in this case), the degradation products bear a non-negligible negative charge (Fig.~S2) and tend to coordinate more strongly to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), thereby forming an ion pair (together with a \ce{H-} in the case of \textbf{3b$_x$}, $x$=1-3).  
+These findings suggest that, upon calcium deposition at the electrode surface (i.e., formation of the SEI), the corresponding degradation products are likely to remain associated with the metal center and contribute to surface passivation.
 This is consistent  with the theoretical results (molecular dynamics) of the intercalation degradation products of THF into the calcium metal layer, reported by Pathreeker \textit{et al.} \cite{pathreekerWhyTetrahydrofuranGood2021}. 
 Similarly, Young \textit{et al.}  \cite{youngEthyleneCarbonateBasedElectrolyte2018} have observed such intercalation in ethylene carbonate (EC), a solvent with similar structural features, even in the absence of added electrolyte.
 
@@ -414,7 +418,7 @@ Finally, an analysis of the formal charge of each solvated species, obtained via
 \begin{equation*}
 	\ce{\textbf{1\textsuperscript{2+}} + Ca_{(surf)} + e^- <=> [\textbf{3a\textsubscript{1}'}]^+  + Ca_{(surf)}  + e^- <=> \textbf{3b}\textsubscript{1}  + Ca_{(surf)} }.
 \end{equation*}
-This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S2), which reveals notable contributions from the $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. 
+This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S3), which reveals notable contributions from the $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. 
 This orbital involvement suggests a hydride/proton transfer, consistent with the formation of \textbf{3b\textsubscript{1}}.
 
 
