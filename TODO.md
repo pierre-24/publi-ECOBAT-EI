@@ -19,4 +19,4 @@ for v2.0:
 
 - [x] Implement all corrections
 - [x] Fix abbreviations
-- [ ] Check if the funny things (Author statements, etc) still matches the guidelines at https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/journal-of-materials-chemistry-a
+- [x] Check if the funny things (Author statements, etc) still matches the guidelines at https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/journal-of-materials-chemistry-a

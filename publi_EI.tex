@@ -267,8 +267,8 @@ The latter is computed as
 	\Phi(\Delta n_e) = E_\infty(\Delta n_e) - E_F(\Delta n_e), \label{eq:gcdft}
 \end{equation}
 with $E_\infty$ and $E_F$ denoting the vacuum and Fermi levels, respectively. 
-The former is determined by measuring the potential energy further away from the slab, wile the latter is a product of any solid-state calculation. 
-Note that when $\Delta n_e = 0$, this work function correspond to the potential of zero charge (PZC).
+The former is determined by measuring the potential energy further away from the slab, while the latter is a product of any solid-state calculation. 
+Note that when $\Delta n_e = 0$, this work function corresponds to the potential of zero charge (PZC).
 These charged systems are treated  by VASP using the homogeneous background method (HBM) \cite{hagopianAdvancementHomogeneousBackground2022} to maintain the neutrality of the unit cell (which is lost when adding $\Delta n_e$ electrons). 
 Note that a fraction of the background charge is distributed within the slab, mimicking the electrode; therefore, the effective surface charge must be corrected.  
 Accordingly, in this study, the fraction of active electrons is set to $\alpha_s = 0.8$, as estimated in a first approximation from the vacuum volume using $\alpha_s = 1-\frac{V_s}{V_c}$, where $V_s$ and $V_c$ are the volumes of the slab and the cell, respectively\cite{hagopianAdvancementHomogeneousBackground2022}.  
@@ -293,7 +293,7 @@ This reaction occurs at the electrode-electrolyte interface and can be represent
 where \ce{Ca_{(surf)}} represents the calcium electrode. 
 After reduction, the \ce{Ca} atom is adsorbed on the metallic surface.
 The equilibrium electrochemical potential associated with this interfacial reaction is determined from the electrochemical free energy, $F(\Phi)$, computed for both the oxidized (left-hand side) and reduced (right-hand side) species as a function of the electrode potential. 
-The zero is given by the bare calcium surface (\ce{Ca_{(surf)}}) at its PZC. 
+The zero of energy is given by the bare calcium surface (\ce{Ca_{(surf)}}) at its PZC. 
 These results are shown in the top panel of Fig.~\ref{fig:platting}. 
 The corresponding free energy curves exhibit the characteristic parabolic behavior described in previous studies \cite{hagopianInitioModellingInterfacial2021,hagopianAdvancementHomogeneousBackground2022}, with their intersection defining the equilibrium potential of the reaction. 
 In the present case, the extrapolated crossing point yields an equilibrium potential of \SI{-3.4}{\volt} vs SHE. 
@@ -321,7 +321,7 @@ By extrapolation of the orange curve to the equilibrium potential ( \SI{-3.4}{\v
 
 Using an equivalent computational framework and upon replacing THF with glyme (G1), Nguyen \textit{et al.} \cite{nguyenSolvationReductionCoupling2023} have reported an equilibrium potential of \SI{-3.29}{\volt} vs SHE.
 Furthermore, the onset potential (\SI{-2.9}{\volt}) remains nearly identical between the two solvent. 
-They also indicate that one could estimate the entropic contribution due to the release of the solvent molecules by using the entropic contribution to the Gibbs free energy of solid to liquid (fusion) phase change. 
+They also have indicated that one could estimate the entropic contribution due to the release of the solvent molecules by using the entropic contribution to the Gibbs free energy of solid to liquid (fusion) phase change. 
 The correction is of about +\SI{0.2}{\volt} in both solvent, which remains below the equilibrium potential of Ca/\ce{Ca^2+}, and in agreement with measurements performed in pure THF and THF/G1 mixtures \cite{melemedImpactDifferentialCa22023}.
 
 \subsection{Degradation products resulting from the decomposition of solvated \ce{Ca^2+}}
@@ -357,7 +357,7 @@ Subsequent reactions between these primary products, and likely with the electro
 
 \begin{figure*}[h]
 	\centering
-	\includegraphics[width=.6\linewidth]{Figure3}
+	\includegraphics[width=.7\linewidth]{Figure3}
 \caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the Fukui analysis. 
 	During geometry optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganizes into \textbf{3a\textsubscript{2}'}.  
 	The formal charges mirror the Bader charge analysis (Fig.~S2).}
@@ -386,7 +386,7 @@ Following geometry optimization of each solvated species, the reaction energies 
 		3b\textsubscript{3} & -4.21 & 2.653 $\pm$ 0.198 & 2.108 \\
 		\hline
 	\end{tabular}
-	\caption{Reduction reaction energies starting from \textbf{1\textsuperscript{2+}} ($\Delta E_r$, in \si{\electronvolt}) and average calcium-oxygen distances (for the oxygen of \textit{intact} THF's, Ca--O[THF], with mean $\pm$ standard deviation, and with the oxygen of the \textit{degraded} THF, Ca--O[X], in \si{\angstrom}) for the different degradation and reorganization reactions.}
+	\caption{Reduction reaction energies starting from \textbf{1\textsuperscript{2+}} ($\Delta E_r$, in \si{\electronvolt}) and average calcium-oxygen distances (for the oxygen of \textit{intact} THF's, Ca--O[THF], with mean $\pm$ standard deviation, and for the oxygen of the \textit{degraded} THF, Ca--O[X], in \si{\angstrom}) for the different degradation and reorganization reactions.}
 	\label{tab:degrad}
 \end{table}
 
