@@ -33,7 +33,7 @@
 
 \definecolor{cream}{RGB}{222,217,201}
 
-\usepackage[final]{changes}
+\usepackage{changes}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -224,7 +224,7 @@ Nonetheless, the electrochemical stability of these anions remains a concern, as
 Multiple experimental \cite{aurbachElectrochemicalBehaviorCalcium1991,taUnderstandingCaElectrodeposition2019,forero-saboyaUnderstandingNaturePassivation2020,mcclaryHeterogeneousOxideEnables2022,zhaoRevealingSolidElectrolyte2022,melemedImpactDifferentialCa22023,bodinBoronBasedFunctionalAdditives2023} and theoretical \cite{hahnCriticalRoleConfigurational2020,liepinyaComputationalComparisonEther2021,yamijalaStabilityCalciumIon2021} studies have thus employed a variety of approaches to elucidate the complex mechanisms governing calcium electrodeposition and/or the formation of SEI. 
 While these computational investigations have provided valuable insights, they generally neglect the explicit role of the electrochemical potential. 
 To overcome this limitation, Filhol and co-workers have developed a methodology, referred to as grand canonical density functional theory (GC-DFT), that accounts for the electrochemical potential by simulating the controlled (dis)charging of an electrode \cite{lespesUsingImplicitSolvent2015,hagopianAdvancementHomogeneousBackground2022}. 
-This approach not only allows the detailed study of reduction processes but also of side-products formation reactions, thereby offering key insights into the initial stages of SEI development and into the electrochemical behavior of the electrolyte \cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020}. 
+This approach not only allows the detailed study of reduction processes but also of side-products formation reactions, thereby offering key insights into the initial stages of SEI development and into the electrochemical behavior of the electrolyte \cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020,bhandariElectrochemistryFirstprinciplesGrand2021}. 
 As a consequence, following an investigation on the behavior of calcium behavior in glyme-based solvents \cite{baonguyenInvestigatingAbnormalConductivity2022}, this methodology has been applied to model the electrochemical activity of these systems \cite{nguyenSolvationReductionCoupling2023}.
 
 The present study aims to elucidate the electrochemical behavior of calcium in tetrahydrofuran (THF) using the GC-DFT methodology. 
@@ -268,6 +268,7 @@ The latter is computed as
 \end{equation}
 with $E_\infty$ and $E_F$ denoting the vacuum and Fermi levels, respectively. 
 The former is determined by measuring the potential energy further away from the slab, while the latter is a product of any solid-state calculation. 
+\added{Since a sufficiently large vacuum region is necessary to ensure the convergence of $E_F$ and $E_\infty$, the interslab distance is therefore chosen to be \SI{52}{\angstrom} (an example is provided in Fig.~S2).}
 Note that when $\Delta n_e = 0$, this work function corresponds to the potential of zero charge (PZC).
 These charged systems are treated  by VASP using the homogeneous background method (HBM) \cite{hagopianAdvancementHomogeneousBackground2022} to maintain the neutrality of the unit cell (which is lost when adding $\Delta n_e$ electrons). 
 Note that a fraction of the background charge is distributed within the slab, mimicking the electrode; therefore, the effective surface charge must be corrected.  
@@ -302,7 +303,7 @@ In other words, if $E^0_{rel} > \SI{-3.4}{\volt}$, the \ce{Ca^2+} cation remains
 \begin{figure}[hb]
 	\centering
 	\includegraphics[width=\linewidth]{Figure1}
-	\caption{Electrochemical free energy ($E^0_{rel}$, in \si{\electronvolt}, top panel) and number of excess electrons transferred to the electrode ($\Delta n_e'$, bottom panel), plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the reduced (blue) and oxidized (orange) calcium interfaces involved in the plating reaction.}
+	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}, top panel) and number of excess electrons transferred to the electrode ($\Delta n_e'$, bottom panel), plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the reduced (blue) and oxidized (orange) calcium interfaces involved in the plating reaction. \added{Value at the intersection between lines is listed in Table S1.}}
 	\label{fig:platting}
 \end{figure}
 
@@ -357,15 +358,16 @@ Subsequent reactions between these primary products, and likely with the electro
 
 \begin{figure*}[h]
 	\centering
-	\includegraphics[width=.7\linewidth]{Figure3}
+	\includegraphics[width=.65\linewidth]{Figure3}
 \caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the Fukui analysis. 
 	During geometry optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganizes into \textbf{3a\textsubscript{2}'}.  
-	The formal charges mirror the Bader charge analysis (Fig.~S2).}
+	The formal charges mirror the Bader charge analysis (Fig.~S3).}
 	\label{fig:THFdeg}
 \end{figure*}
 
 
 Following geometry optimization of each solvated species, the reaction energies for the reduction processes, along with the calcium–oxygen distances, are summarized in Table~\ref{tab:degrad}. The computed reaction energies confirm that all reduction pathways are energetically favorable. In particular, pathways involving proton transfer (\textbf{3b}$_x$) or the formation of hydroxylated species (\textbf{3a\textsubscript{2}'}) exhibit very negative $\Delta E_r$ values  ($< \SI{-4}{\electronvolt}$), smaller than the direct formation of \textbf{1}. 
+\added{Note that these trends are approximate, since they lack the influence of the surface (see below).}
 
 \begin{table}[h]
 	\centering
@@ -391,26 +393,27 @@ Following geometry optimization of each solvated species, the reaction energies 
 \end{table}
 
 The evolution of the Ca--O distances further highlights the extent of the degradation of the solvation environment. The addition of two electrons to the solvated calcium complex induces only minimal changes in the Ca--O[THF] bond lengths, but increases the Ca--O[X] distance (\textbf{1\textsuperscript{2+}} versus \textbf{1}).  
-A charge analysis (Fig.~S2) reveals that \ce{Ca} retains its positive charge, while the two extra electrons are distributed over the neighboring THF molecules.  
+A charge analysis (Fig.~S3) reveals that \ce{Ca} retains its positive charge, while the two extra electrons are distributed over the neighboring THF molecules.  
 However, upon subsequent reorganization to form \textbf{2} and \textbf{3}, these distances increase by at least \SI{0.2}{\angstrom}, indicating a destabilization of the first solvation shell.  
 Note that similar destabilizations were observed by Nguyen \textit{et al.} for glyme (G4)\cite{nguyenSolvationReductionCoupling2023}.
-In some cases, such as \textbf{3a\textsubscript{2}'} and \textbf{3b}$_x$, the number of coordinating THF molecules decreases, and one or more Ca--O[THF] distances elongate beyond \SI{2.65}{\angstrom} (Table~S1), effectively excluding these solvent molecules from the immediate coordination sphere. This results in an increase in the standard deviation of the Ca--O[THF] distances.  
-Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in this case), the degradation products bear a non-negligible negative charge (Fig.~S2) and tend to coordinate more strongly to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), thereby forming an ion pair (together with a \ce{H-} in the case of \textbf{3b$_x$}, $x$=1-3).  
+In some cases, such as \textbf{3a\textsubscript{2}'} and \textbf{3b}$_x$, the number of coordinating THF molecules decreases, and one or more Ca--O[THF] distances elongate beyond \SI{2.65}{\angstrom} (Table~S2), effectively excluding these solvent molecules from the immediate coordination sphere. This results in an increase in the standard deviation of the Ca--O[THF] distances.  
+Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in this case), the degradation products bear a non-negligible negative charge (Fig.~S3) and tend to coordinate more strongly to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), thereby forming an ion pair (together with a \ce{H-} in the case of \textbf{3b$_x$}, $x$=1-3).  
 These findings suggest that, upon calcium deposition at the electrode surface (i.e., formation of the SEI), the corresponding degradation products are likely to remain associated with the metal center and contribute to surface passivation.
 This is consistent  with the theoretical results (molecular dynamics) of the intercalation degradation products of THF into the calcium metal layer, reported by Pathreeker \textit{et al.} \cite{pathreekerWhyTetrahydrofuranGood2021}. 
 Similarly, Young \textit{et al.}  \cite{youngEthyleneCarbonateBasedElectrolyte2018} have observed such intercalation in ethylene carbonate (EC), a solvent with similar structural features, even in the absence of added electrolyte.
 
+
 It should also be noted that with a $\Delta E_r$ of \SI{-2.20}{\electronvolt}, the two-electron reduction of \textbf{1\textsuperscript{2+}}, is predicted at $E^0_{rel} = -\frac{\Delta{E_r}}{2} - \SI{4.5}{\volt} = \SI{-3.4}{\volt}$ vs SHE, close to the value reported in the previous subsection. 
-However, for the other decompositions, the energetic trends presented in Table~\ref{tab:degrad} are approximate, as they do not account for the influence of the electrode. A more comprehensive analysis is provided in Fig.~\ref{fig:degrad2}. 
+However, for the other decompositions, the energetic trends presented in Table~\ref{tab:degrad} are approximate, as they do not account for the influence of the electrode. 
+A more comprehensive analysis is provided in Fig.~\ref{fig:degrad2}. 
 Notably, the free energy curves corresponding to the \textbf{3a}$_x$ species ($x$=1,3) lie above that of the bare surface, indicating that the corresponding reduction reactions, \ce{\textbf{1\textsuperscript{2+}} + 2e^- <=> \textbf{3a}$_x$}, are thermodynamically unfavorable. These pathways are therefore excluded from Fig.~\ref{fig:degrad2} and subsequent discussion. Additionally, the reaction \ce{\textbf{1\textsuperscript{2+}} + 2e^- <=> \textbf{3a\textsubscript{2}'}}, which initially appeared favorable in the absence of the electrode, is predicted to occur at approximately \SI{-3.0}{\volt} vs SHE, above the onset potential of \textbf{1} (forming other, more favorable, compounds), rendering this reaction difficult under operating conditions.
 All remaining decomposition reactions intersect the free energy curve of \textbf{1} at potentials above its onset (\textit{i.e.}, at lower potential of reduction), indicating their thermodynamic viability. 
 Specifically, the formation of \textbf{2} occurs near \SI{-2.6}{\volt} vs SHE, while the remaining four pathways, including the proton transfer reactions forming \textbf{3b}$_x$ (in line with Ref.~\cite{pathreekerWhyTetrahydrofuranGood2021}), become favorable between \SI{-1.5}{\volt} and \SI{-1.0}{\volt} vs SHE.
 
-
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[width=\linewidth]{Figure4}
-	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare Ca surface (blue, taken from Fig.~\ref{fig:platting}), solvated \ce{Ca^2+} (orange, taken from Fig.~\ref{fig:platting}), and the different degradation products. Products \textbf{3a\textsubscript{1}} and \textbf{3a\textsubscript{3}} are not represented on this graph (see text).}
+	\includegraphics[width=.96\linewidth]{Figure4}
+	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare Ca surface (blue, taken from Fig.~\ref{fig:platting}), solvated \ce{Ca^2+} (orange, taken from Fig.~\ref{fig:platting}), and the different degradation products. \added{Values at the intersections between lines is listed in Table S1.} Products \textbf{3a\textsubscript{1}} and \textbf{3a\textsubscript{3}} are not represented on this graph (see text).}
 	\label{fig:degrad2}
 \end{figure}
 
@@ -418,7 +421,7 @@ Finally, an analysis of the formal charge of each solvated species, obtained via
 \begin{equation*}
 	\ce{\textbf{1\textsuperscript{2+}} + Ca_{(surf)} + e^- <=> [\textbf{3a\textsubscript{1}'}]^+  + Ca_{(surf)}  + e^- <=> \textbf{3b}\textsubscript{1}  + Ca_{(surf)} }.
 \end{equation*}
-This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S3), which reveals notable contributions from the $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. 
+This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S4), which reveals notable contributions from the $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. 
 This orbital involvement suggests a hydride/proton transfer, consistent with the formation of \textbf{3b\textsubscript{1}}.
 
 
@@ -443,14 +446,14 @@ Similar behavior has been reported for cobalt oxide by Curutchet \textit{et al.}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Figure6}
-	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare \ce{CaH2} surface (dark and light blue, see text), \ce{[Ca(THF)_6]^2+} (\textbf{1}, orange), and one decomposition product, \textbf{3b\textsubscript{1}}.}
+	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare \ce{CaH2} surface (dark and light blue, see text), \ce{[Ca(THF)_6]^2+} (\textbf{1}, orange), and one decomposition product, \textbf{3b\textsubscript{1}}. \added{Value at the intersection between lines is listed in Table S1.}}
 	\label{fig:cah2}
 \end{figure}
 
 When introducing solvated \ce{Ca^2+} species (\textbf{1}), the addition of electrons at potentials below \SI{-1}{\volt} leads directly to the reduction of \textbf{1} (not shown here). 
 Nevertheless, decomposition reactions can still proceed, as exemplified by the process \ce{\textbf{1\textsuperscript{2+}} + 2e^- <=> \textbf{3b}\textsubscript{1}}. 
 In the presence of a \ce{CaH2} surface, the predicted reduction potential for this reaction shifts to approximately \SI{-0.5}{\volt} vs SHE, significantly higher than that predicted with a \ce{Ca^0} surface. 
-This indicates that, from a thermodynamic perspective, the presence of \ce{CaH2} facilitates the formation of decomposition products by lowering the energy barrier, allowing these processes to occur at more positive potentials.
+This indicates that, from a thermodynamic perspective, the presence of \ce{CaH2} facilitates the formation of decomposition products by lowering the \replaced{reaction energy}{energy barrier}, allowing these processes to occur at more positive potentials.
 
 
 \section{Conclusions and outlooks} \label{sec:ccls}
@@ -468,6 +471,8 @@ This partial degradation contributes to the decline of the battery performance a
 Kinetics information, when required, can be accessed through mechanistic DFT studies \cite{bodinBoronBasedFunctionalAdditives2023}, machine learning-assisted reaction networks \cite{xieDataDrivenPredictionFormation2021}, or ab initio/reactive molecular dynamics simulations \cite{manzanoHydrationCalciumOxide2012,youngEthyleneCarbonateBasedElectrolyte2018,youngPreventingElectrolyteDecomposition2021,yamijalaStabilityCalciumIon2021,gaoComparativeStudyReductive2024}. 
 However, these approaches often neglect the influence of the electrode, which, according to recent work by Steinmann and Le Bahers in the field of electrocatalysis, can significantly impact both reaction pathways and activation barriers \cite{curutchetTwositesAreBetter2020,ramzanElectrocatalyticReductionMechanisms2024}.
 Future research will investigate the influence of boron-containing additives as well as alternative counteranions on calcium electrodeposition. Although the solvation of \ce{Ca^{2+}} in the presence of \ce{BH4^{-}} has been previously characterized \cite{melemedCurrentUnderstandingNonaqueous2020,araujoNovelCalciumBattery2021,sanzmatiasCadimersSolventLayering2024}, the detailed mechanism of calcium plating in such systems, whether with \ce{BH4^{-}} \cite{forero-saboyaBoronbasedElectrolyteAdditive2021,melemedImpactDifferentialCa22023} or \ce{BF4^{-}} \cite{bodinBoronBasedFunctionalAdditives2023}, remains unresolved.
+
+\clearpage
 
 \section*{Author contributions}
 

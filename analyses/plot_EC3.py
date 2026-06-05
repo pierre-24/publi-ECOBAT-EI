@@ -36,6 +36,7 @@ parser.add_argument('-c', '--colors', nargs='*')
 parser.add_argument('-l', '--limits', default='-4:0.5', type=get_limits)
 parser.add_argument('-o', '--output', default='Data_EC.pdf')
 parser.add_argument('-L', '--left-limit', type=float, default=-2.5)
+parser.add_argument('--show', action='store_true')
 
 args = parser.parse_args()
 
@@ -61,3 +62,6 @@ ax.set_xlabel('E$^0_{rel}$ (V vs SHE)')
 
 plt.tight_layout()
 figure.savefig(args.output, dpi=300)
+
+if args.show:
+    plt.show()

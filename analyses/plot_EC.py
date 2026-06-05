@@ -49,6 +49,7 @@ parser.add_argument('-o', '--output', default='Data_EC.pdf')
 parser.add_argument('--zc', type=int, required=True)
 parser.add_argument('--szc', type=int, required=True)
 parser.add_argument('-L', '--left-limit', type=float, default=-2.5)
+parser.add_argument('--show', action='store_true')
 
 args = parser.parse_args()
 
@@ -73,3 +74,7 @@ axes[1].set_ylabel('$\\Delta n_e\'$ in slab')
 
 plt.tight_layout()
 figure.savefig(args.output, dpi=300)
+
+
+if args.show:
+    plt.show()

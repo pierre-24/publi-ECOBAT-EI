@@ -1,4 +1,4 @@
-all: main
+all: main SI
 
 main:
 	python ./plot_EC.py ../data/EC_Ca_bare.csv ../data/EC_Ca_solv.csv \
@@ -17,3 +17,6 @@ main:
 	-n 'Bare (VB)' 'Bare (CB)' '$$\bf{1}$$' '$$\bf{3b_1}$$' \
 	-c "C0" "lightblue" "C1" "C4" \
 	-L -5 --limits="-4.5:2" -o ../Figure6.pdf
+
+SI:
+	python ./plot_wfunc.py `seq 45 55` 60 65 70 -o ../FigureS2.pdf

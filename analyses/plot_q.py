@@ -33,10 +33,10 @@ args = parser.parse_args()
 if len(args.inputs) != len(args.names):
     raise Exception('inputs and names should have the same size')
 
-figure = plt.figure(figsize=(6, 4))
+figure = plt.figure(figsize=(7, 4))
 ax = figure.subplots()
 
-ax.hlines([0, 1, 2], *args.limits, color='gray')
+ax.hlines([0, 1, 2], *args.limits, color='cyan', ls='--')
 
 i = 0
 for inp, name in zip(args.inputs, args.names):

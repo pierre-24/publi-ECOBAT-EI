@@ -1,0 +1,168 @@
+** Ca_d_45
+  - Reading Ca_d_45/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.214 [V]
+  - Reading Ca_d_45/CHGCAR... OK
+  → Charge density is minimal at z = 42.473 (n.V = 1.032e-01 [e Å³])
+  → Selected vacuum area: z ∈ [42.343,42.538)
+  - Reading Ca_d_45/LOCPOT... OK
+  → Vacuum potential (z=42.408) = 1.651 [eV]
+  → Average potential in cell = 0.132 [eV]
+  → Corresponding work function = 1.864 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_46
+  - Reading Ca_d_46/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.233 [V]
+  - Reading Ca_d_46/CHGCAR... OK
+  → Charge density is minimal at z = 42.983 (n.V = 1.202e-01 [e Å³])
+  → Selected vacuum area: z ∈ [42.859,43.045)
+  - Reading Ca_d_46/LOCPOT... OK
+  → Vacuum potential (z=42.921) = 1.627 [eV]
+  → Average potential in cell = 0.127 [eV]
+  → Corresponding work function = 1.860 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_47
+  - Reading Ca_d_47/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.253 [V]
+  - Reading Ca_d_47/CHGCAR... OK
+  → Charge density is minimal at z = 43.454 (n.V = 1.221e-01 [e Å³])
+  → Selected vacuum area: z ∈ [43.391,43.517)
+  - Reading Ca_d_47/LOCPOT... OK
+  → Vacuum potential (z=43.454) = 1.613 [eV]
+  → Average potential in cell = 0.125 [eV]
+  → Corresponding work function = 1.866 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_48
+  - Reading Ca_d_48/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.273 [V]
+  - Reading Ca_d_48/CHGCAR... OK
+  → Charge density is minimal at z = 17.477 (n.V = 1.245e-01 [e Å³])
+  → Selected vacuum area: z ∈ [17.413,17.605)
+  - Reading Ca_d_48/LOCPOT... OK
+  → Vacuum potential (z=17.477) = 1.600 [eV]
+  → Average potential in cell = 0.123 [eV]
+  → Corresponding work function = 1.873 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_49
+  - Reading Ca_d_49/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.294 [V]
+  - Reading Ca_d_49/CHGCAR... OK
+  → Charge density is minimal at z = 0.000 (n.V = 1.433e-04 [e Å³])
+  → Selected vacuum area: z ∈ [-0.195,0.195)
+  - Reading Ca_d_49/LOCPOT... OK
+  → Vacuum potential (z=0.000) = 1.204 [eV]
+  → Average potential in cell = 0.125 [eV]
+  → Corresponding work function = 1.498 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_50
+  - Reading Ca_d_50/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.312 [V]
+  - Reading Ca_d_50/CHGCAR... OK
+  → Charge density is minimal at z = 0.000 (n.V = 3.912e-02 [e Å³])
+  → Selected vacuum area: z ∈ [-0.196,0.196)
+  - Reading Ca_d_50/LOCPOT... OK
+  → Vacuum potential (z=0.000) = 1.190 [eV]
+  → Average potential in cell = 0.119 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_51
+  - Reading Ca_d_51/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.330 [V]
+  - Reading Ca_d_51/CHGCAR... OK
+  → Charge density is minimal at z = 0.000 (n.V = 2.011e-02 [e Å³])
+  → Selected vacuum area: z ∈ [-0.258,0.258)
+  - Reading Ca_d_51/LOCPOT... OK
+  → Vacuum potential (z=0.000) = 1.171 [eV]
+  → Average potential in cell = 0.117 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_52
+  - Reading Ca_d_52/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.348 [V]
+  - Reading Ca_d_52/CHGCAR... OK
+  → Charge density is minimal at z = 0.065 (n.V = 8.326e-03 [e Å³])
+  → Selected vacuum area: z ∈ [-0.325,0.455)
+  - Reading Ca_d_52/LOCPOT... OK
+  → Vacuum potential (z=0.065) = 1.153 [eV]
+  → Average potential in cell = 0.115 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_53
+  - Reading Ca_d_53/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.365 [V]
+  - Reading Ca_d_53/CHGCAR... OK
+  → Charge density is minimal at z = 0.000 (n.V = 4.626e-03 [e Å³])
+  → Selected vacuum area: z ∈ [-0.519,0.519)
+  - Reading Ca_d_53/LOCPOT... OK
+  → Vacuum potential (z=0.000) = 1.136 [eV]
+  → Average potential in cell = 0.113 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_54
+  - Reading Ca_d_54/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.382 [V]
+  - Reading Ca_d_54/CHGCAR... OK
+  → Charge density is minimal at z = 0.000 (n.V = 2.401e-03 [e Å³])
+  → Selected vacuum area: z ∈ [-0.687,0.687)
+  - Reading Ca_d_54/LOCPOT... OK
+  → Vacuum potential (z=0.000) = 1.119 [eV]
+  → Average potential in cell = 0.111 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_55
+  - Reading Ca_d_55/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.398 [V]
+  - Reading Ca_d_55/CHGCAR... OK
+  → Charge density is minimal at z = 68.331 (n.V = 3.389e-03 [e Å³])
+  → Selected vacuum area: z ∈ [67.443,69.218)
+  - Reading Ca_d_55/LOCPOT... OK
+  → Vacuum potential (z=68.331) = 1.103 [eV]
+  → Average potential in cell = 0.110 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_60
+  - Reading Ca_d_60/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.473 [V]
+  - Reading Ca_d_60/CHGCAR... OK
+  → Charge density is minimal at z = 72.055 (n.V = -1.431e-03 [e Å³])
+  → Selected vacuum area: z ∈ [70.460,75.562)
+  - Reading Ca_d_60/LOCPOT... OK
+  → Vacuum potential (z=73.011) = 1.028 [eV]
+  → Average potential in cell = 0.102 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_65
+  - Reading Ca_d_65/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.539 [V]
+  - Reading Ca_d_65/CHGCAR... OK
+  → Charge density is minimal at z = 78.196 (n.V = -3.293e-03 [e Å³])
+  → Selected vacuum area: z ∈ [75.058,81.334)
+  - Reading Ca_d_65/LOCPOT... OK
+  → Vacuum potential (z=78.196) = 0.962 [eV]
+  → Average potential in cell = 0.096 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
+** Ca_d_70
+  - Reading Ca_d_70/vaspout.h5... OK
+  → NELECT = 1576.000 [e]
+  → Fermi energy = -0.597 [V]
+  - Reading Ca_d_70/CHGCAR... OK
+  → Charge density is minimal at z = 77.655 (n.V = -4.273e-03 [e Å³])
+  → Selected vacuum area: z ∈ [76.090,79.871)
+  - Reading Ca_d_70/LOCPOT... OK
+  → Vacuum potential (z=77.981) = 0.905 [eV]
+  → Average potential in cell = 0.090 [eV]
+  → Corresponding work function = 1.501 [V]
+  - Writing xy-averaged charge and potential... OK
