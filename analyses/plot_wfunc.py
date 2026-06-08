@@ -29,9 +29,9 @@ for i, dx in enumerate(args.distances):
     axes[1].semilogy(d[d < 15], data_chg['chgx'][d < 15], color=colors[i]) 
     axes[1].semilogy(d[d > d.max() - 15] - d.max(), data_chg['chgx'][d > d.max() - 15], color=colors[i]) 
 
-axes[0].set_ylabel('$E_\\infty$ per unit volume (V Å$^{-3}$)')
+axes[0].set_ylabel('$E_\\infty$ (V)')
 axes[0].set_xlabel('Distance from center (Å)')
-axes[1].set_ylabel('$\\rho(r)$ (e Å$^{-3}$)')
+axes[1].set_ylabel('Mean $\\rho(r)$ (e Å$^{-1}$)')
 axes[1].set_xlabel('Distance from center (Å)')
 
 axes[0].legend(ncol=4)

@@ -225,10 +225,10 @@ Nonetheless, the electrochemical stability of these anions remains a concern, as
 
 Multiple experimental \cite{aurbachElectrochemicalBehaviorCalcium1991,taUnderstandingCaElectrodeposition2019,forero-saboyaUnderstandingNaturePassivation2020,mcclaryHeterogeneousOxideEnables2022,zhaoRevealingSolidElectrolyte2022,melemedImpactDifferentialCa22023,bodinBoronBasedFunctionalAdditives2023} and theoretical \cite{hahnCriticalRoleConfigurational2020,liepinyaComputationalComparisonEther2021,yamijalaStabilityCalciumIon2021} studies have thus employed a variety of approaches to elucidate the complex mechanisms governing calcium electrodeposition and/or the formation of SEI. 
 While these computational investigations have provided valuable insights, they generally neglect the explicit role of the electrochemical potential. 
-\added{To overcome this limitation, grand-canonical density functional theory (GC-DFT) has been developed, enabling the treatment of charged interfaces under conditions of constant( electro)chemical potential.}\cite{lozovoiInitioSimulationCharged2001,sundararamanGrandCanonicalElectronic2017,melanderGrandCanonicalEnsemble2021} 
-\added{Since its introduction, several practical frameworks have been proposed to implement grand-canonical simulations of electrochemical systems from first principles. 
-Seminal contributions by Otani and co-workers}\cite{otaniFirstprinciplesCalculationsCharged2006,bonnetFirstPrinciplesMolecularDynamics2012}\added{ and subsequent developments by other groups}\cite{letchworth-weaverJointDensityFunctional2012,goodpasterIdentificationPossiblePathways2016,melanderGrandcanonicalApproachDensity2018,teschPropertiesPt111Electrolyte2021}\added{ have established GC-DFT as a powerful tool for investigating interfaces.
-In the present work, we employ the approach developed by Filhol and co-workers,  based on an homogeneous background of charge and the Poisson-Boltzmann equations}\cite{filholElucidationElectrochemicalActivation2006,taylorFirstPrinciplesReaction2006,lespesUsingImplicitSolvent2015,hagopianAdvancementHomogeneousBackground2022}\added{ which enables the direct evaluation of potential-dependent reaction energetics by controlling the electronic chemical potential of the system.
+\added{To overcome this limitation, grand-canonical density functional theory (GC-DFT) has been developed, enabling the treatment of charged interfaces under conditions of constant (electro)chemical potential.}\cite{lozovoiInitioSimulationCharged2001,sundararamanGrandCanonicalElectronic2017,melanderGrandcanonicalApproachDensity2018,melanderGrandCanonicalEnsemble2021} 
+\added{Since its introduction, several practical frameworks have been proposed to implement grand-canonical simulations of electrochemical systems from first principles calculations. 
+Seminal contributions by Otani and co-workers}\cite{otaniFirstprinciplesCalculationsCharged2006,bonnetFirstPrinciplesMolecularDynamics2012}\added{ and subsequent developments by other groups}\cite{letchworth-weaverJointDensityFunctional2012,goodpasterIdentificationPossiblePathways2016,teschPropertiesPt111Electrolyte2021}\added{ have established GC-DFT as a powerful tool for investigating interfaces.
+In the present work, we employ the approach developed by Filhol and co-workers,  based on a homogeneous background of charge and the Poisson-Boltzmann equations}\cite{filholElucidationElectrochemicalActivation2006,taylorFirstPrinciplesReaction2006,lespesUsingImplicitSolvent2015,hagopianAdvancementHomogeneousBackground2022}\added{ which enables the direct evaluation of potential-dependent reaction energetics by controlling the electronic chemical potential of the system.
 This framework is particularly well suited for studying electrode processes and} was applied to the detailed study of reduction processes but also of side-products formation reactions, thereby offering key insights into the initial stages of SEI development and into the electrochemical behavior of the electrolyte \cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020,bhandariElectrochemistryFirstprinciplesGrand2021}. 
 Following a recent investigation on the behavior of calcium behavior in glyme-based solvents \cite{baonguyenInvestigatingAbnormalConductivity2022}, this methodology has been applied to model the electrochemical activity of these systems \cite{nguyenSolvationReductionCoupling2023}.
 
@@ -243,7 +243,8 @@ Conclusions and perspectives are finally drawn in Section~\ref{sec:ccls}.
 
 All calculations, including geometry optimizations and binding energy evaluations, were carried out using the Vienna \textit{Ab initio} Simulation Package (VASP, version 6.3.2 \cite{kresse1996efficiency,kresse1996efficient,kresseUltrasoftPseudopotentialsProjector1999}), within the framework of density functional theory (DFT). 
 The Perdew--Burke--Ernzerhof (PBE) exchange-correlation functional is employed in conjunction with the D3 dispersion correction and the projector augmented-wave (PAW) method \cite{blochlProjectorAugmentedwaveMethod1994}. 
-Unless otherwise mentioned, the \texttt{Ca\_pv} pseudopotential was used to model calcium \cite{blochlProjectorAugmentedwaveMethod1994,kresseUltrasoftPseudopotentialsProjector1999}. A kinetic energy cutoff of \SI{550}{\electronvolt} is applied to the plane-wave basis set. Brillouin zone integrations were performed using a $4 \times 4 \times 1$ Monkhorst-Pack $k$-point mesh \cite{monkhorstSpecialPointsBrillouinzone1976}. 
+Unless otherwise mentioned, the \texttt{Ca\_pv} pseudopotential was used to model calcium \cite{blochlProjectorAugmentedwaveMethod1994,kresseUltrasoftPseudopotentialsProjector1999}. A kinetic energy cutoff of \SI{550}{\electronvolt} is applied to the plane-wave basis set. Brillouin zone integrations were performed using a $4 \times 4 \times 1$ Monkhorst-Pack $k$-point mesh \cite{monkhorstSpecialPointsBrillouinzone1976}.  
+\added{The energy is converged using a tight convergence criteria of \SI{e-6}{\electronvolt}, without any smearing technique.}
 Solvation effects from outer solvent molecules were included via the VASPSOL implicit solvation model \cite{mathewImplicitSolvationModel2014,mathewImplicitSelfconsistentElectrolyte2019}, with the dielectric constant set to $\varepsilon_r = 7.56$ to represent tetrahydrofuran (THF). 
 Following Filhol and co-workers \cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020,hagopianInitioModellingInterfacial2021,nguyenSolvationReductionCoupling2023}, the surface tension parameter was set to $\tau = 0$, the cavity is defined using a density cutoff of $\rho_K = \SI{5e-5}{\elementarycharge\per\angstrom\cubed}$, and the cavity smearing parameter was kept at its default value of $\sigma_k = 0.6$.
 
@@ -273,18 +274,18 @@ The latter is computed as
 \end{equation}
 with $E_\infty$ and $E_F$ denoting the vacuum and Fermi levels, respectively. 
 The former is determined by measuring the potential energy further away from the slab, while the latter is a product of any solid-state calculation. 
-\added{Since a sufficiently large vacuum region is necessary to ensure the convergence of $E_F$ and $E_\infty$, the interslab distance is therefore chosen to be \SI{52}{\angstrom} (an example is provided in Fig.~S2).}
+\added{Since a sufficiently large vacuum region is necessary to ensure the convergence of $E_F$ and $E_\infty$  (as demonstrated in Figs.~S2-S3), the interslab distance was therefore set to \SI{52}{\angstrom}.}
 Note that when $\Delta n_e = 0$, this work function corresponds to the potential of zero charge (PZC).
 These charged systems are treated  by VASP using the homogeneous background method (HBM) \cite{hagopianAdvancementHomogeneousBackground2022} to maintain the neutrality of the unit cell (which is lost when adding $\Delta n_e$ electrons). 
 Note that a fraction of the background charge is distributed within the slab, mimicking the electrode; therefore, the effective surface charge must be corrected.  
 Accordingly, in this study, the fraction of active electrons is set to $\alpha_s = 0.8$, as estimated in a first approximation from the vacuum volume using $\alpha_s = 1-\frac{V_s}{V_c}$, where $V_s$ and $V_c$ are the volumes of the slab and the cell, respectively\cite{hagopianAdvancementHomogeneousBackground2022}.  
-For these calculations, the energy is converged using a tight convergence criteria of \SI{e-6}{\electronvolt}. 
+\deleted{For these calculations, the energy is converged using a tight convergence criteria of 10\textsuperscript{-6} eV}. 
 It should be noted than while $F(\Phi)$ is temperature-dependent, the treatment used in Eq.~\eqref{eq:gcdft} is done at \SI{0}{\kelvin}.
 
 To compute the number of electrons on each fragment (\textit{i.e.}, the slab and the solvated \ce{Ca^2+} with its six neighbors), the electron density is integrated, owing to their unambiguous spatial separation.  
 When atomic charges are required, they are obtained using the \texttt{bader} code\cite{tangGridbasedBaderAnalysis2009,yuAccurateEfficientAlgorithm2011}.
 
-In all results, the absolute potentials obtained from calculations were converted to the standard hydrogen electrode (SHE) by using $E^0_{rel} = \Phi(\Delta n_e) - \SI{4.5}{\volt}$\added{, where the offset was chosen to reproduce electrochemical reference scales reported for a THF-based system} \cite{marenichComputationalElectrochemistryPrediction2014,dudaRedoxPotentialsHydrogen2026b}.
+In all results, the absolute potentials obtained from calculations were converted to the standard hydrogen electrode (SHE) by using $E^0_{rel} = \Phi(\Delta n_e) - \SI{4.5}{\volt}$\added{, where the offset was chosen to reproduce electrochemical reference scales reported for THF-based systems} \cite{marenichComputationalElectrochemistryPrediction2014,dudaRedoxPotentialsHydrogen2026b}.
 
 
 \section{Results and discussion} \label{sec:results}
@@ -308,7 +309,7 @@ In other words, if $E^0_{rel} > \SI{-3.4}{\volt}$, the \ce{Ca^2+} cation remains
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{Figure1}
-	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}, top panel) and number of excess electrons transferred to the electrode ($\Delta n_e'$, bottom panel), plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the reduced (blue) and oxidized (orange) calcium interfaces involved in the plating reaction. \added{Value at the intersection between lines is listed in Table S1.}}
+	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}, top panel) and number of excess electrons transferred to the electrode ($\Delta n_e'$, bottom panel), plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the reduced (blue) and oxidized (orange) calcium interfaces involved in the plating reaction. \added{Values at  intersections between lines ar listed in Table S1.}}
 	\label{fig:platting}
 \end{figure}
 
@@ -351,7 +352,7 @@ This reorganization involves population of the $\pi_{C-C}$ (bonding), $\sigma^\s
 	\includegraphics[width=.65\linewidth]{Figure3}
 	\caption{Proposed degradation pathways of the solvated \ce{Ca^{2+}} complex (\textbf{1}\textsuperscript{2+}), following the Fukui analysis. 
 		During geometry optimization, compound \textbf{3a\textsubscript{2}} spontaneously reorganizes into \textbf{3a\textsubscript{2}'}.  
-		The formal charges mirror the Bader charge analysis (Fig.~S3).}
+		The formal charges mirror the Bader charge analysis (Fig.~S4).}
 	\label{fig:THFdeg}
 \end{figure*}
 
@@ -372,7 +373,7 @@ It is important to note that the current analysis targets only the initial stage
 Subsequent reactions between these primary products, and likely with the electrode surface, are known to yield smaller molecular fragments, including \ce{C2H4} and \ce{CO2} \cite{taUnderstandingCaElectrodeposition2019,melemedImpactDifferentialCa22023}.
 
 Following geometry optimization of each solvated species, the reaction energies for the reduction processes, along with the calcium–oxygen distances, are summarized in Table~\ref{tab:degrad}. The computed reaction energies confirm that all reduction pathways are energetically favorable. In particular, pathways involving proton transfer (\textbf{3b}$_x$) or the formation of hydroxylated species (\textbf{3a\textsubscript{2}'}) exhibit very negative $\Delta E_r$ values  ($< \SI{-4}{\electronvolt}$), smaller than the direct formation of \textbf{1}. 
-\added{Note that these trends are approximate, since they lack the influence of the surface (see below).}
+\added{Note that these trends are approximate, since they lack the influence of the surface (see below for calculation with the slab).}
 
 \begin{table}
 	\centering
@@ -398,11 +399,11 @@ Following geometry optimization of each solvated species, the reaction energies 
 \end{table}
 
 The evolution of the Ca--O distances further highlights the extent of the degradation of the solvation environment. The addition of two electrons to the solvated calcium complex induces only minimal changes in the Ca--O[THF] bond lengths, but increases the Ca--O[X] distance (\textbf{1\textsuperscript{2+}} versus \textbf{1}).  
-A charge analysis (Fig.~S3) reveals that \ce{Ca} retains its positive charge, while the two extra electrons are distributed over the neighboring THF molecules.  
+A charge analysis (Fig.~S4) reveals that \ce{Ca} retains its positive charge, while the two extra electrons are distributed over the neighboring THF molecules.  
 However, upon subsequent reorganization to form \textbf{2} and \textbf{3}, these distances increase by at least \SI{0.2}{\angstrom}, indicating a destabilization of the first solvation shell.  
 Note that similar destabilizations were observed by Nguyen \textit{et al.} for glyme (G4)\cite{nguyenSolvationReductionCoupling2023}.
 In some cases, such as \textbf{3a\textsubscript{2}'} and \textbf{3b}$_x$, the number of coordinating THF molecules decreases, and one or more Ca--O[THF] distances elongate beyond \SI{2.65}{\angstrom} (Table~S2), effectively excluding these solvent molecules from the immediate coordination sphere. This results in an increase in the standard deviation of the Ca--O[THF] distances.  
-Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in this case), the degradation products bear a non-negligible negative charge (Fig.~S3) and tend to coordinate more strongly to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), thereby forming an ion pair (together with a \ce{H-} in the case of \textbf{3b$_x$}, $x$=1-3).  
+Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in this case), the degradation products bear a non-negligible negative charge (Fig.~S4) and tend to coordinate more strongly to the calcium center than the THF molecules (Ca--O[X] $<$ Ca--O[THF]), thereby forming an ion pair (together with a \ce{H-} in the case of \textbf{3b$_x$}, $x$=1-3).  
 These findings suggest that, upon calcium deposition at the electrode surface (i.e., formation of the SEI), the corresponding degradation products are likely to remain associated with the metal center and contribute to surface passivation.
 This is consistent  with the theoretical results (molecular dynamics) of the intercalation degradation products of THF into the calcium metal layer, reported by Pathreeker \textit{et al.} \cite{pathreekerWhyTetrahydrofuranGood2021}. 
 Similarly, Young \textit{et al.}  \cite{youngEthyleneCarbonateBasedElectrolyte2018} have observed such intercalation in ethylene carbonate (EC), a solvent with similar structural features, even in the absence of added electrolyte.
@@ -417,7 +418,7 @@ Specifically, the formation of \textbf{2} occurs near \SI{-2.6}{\volt} vs SHE, w
 \begin{figure}
 	\centering
 	\includegraphics[width=.96\linewidth]{Figure4}
-	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare Ca surface (blue, taken from Fig.~\ref{fig:platting}), solvated \ce{Ca^2+} (orange, taken from Fig.~\ref{fig:platting}), and the different degradation products. \added{Values at the intersections between lines is listed in Table S1.} Products \textbf{3a\textsubscript{1}} and \textbf{3a\textsubscript{3}} are not represented on this graph (see text).}
+	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) plotted as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare Ca surface (blue, taken from Fig.~\ref{fig:platting}), solvated \ce{Ca^2+} (orange, taken from Fig.~\ref{fig:platting}), and the different degradation products. \added{Values at  intersections between lines ar listed in Table S1.} Products \textbf{3a\textsubscript{1}} and \textbf{3a\textsubscript{3}} are not represented on this graph (see text).}
 	\label{fig:degrad2}
 \end{figure}
 
@@ -425,7 +426,7 @@ Finally, an analysis of the formal charge of each solvated species, obtained via
 \begin{equation*}
 	\ce{\textbf{1\textsuperscript{2+}} + Ca_{(surf)} + e^- <=> [\textbf{3a\textsubscript{1}'}]^+  + Ca_{(surf)}  + e^- <=> \textbf{3b}\textsubscript{1}  + Ca_{(surf)} }.
 \end{equation*}
-This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S4), which reveals notable contributions from the $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. 
+This proposed sequence is further supported by the analysis of the Fukui function of \textbf{3a\textsubscript{1}'} at its reaction potential (Fig.~S5), which reveals notable contributions from the $\sigma^\star_{C-H}$ orbital of the aldehyde moiety. 
 This orbital involvement suggests a hydride/proton transfer, consistent with the formation of \textbf{3b\textsubscript{1}}.
 
 
@@ -450,7 +451,7 @@ Similar behavior has been reported for cobalt oxide by Curutchet \textit{et al.}
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{Figure6}
-	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare \ce{CaH2} surface (dark and light blue, see text), \ce{[Ca(THF)_6]^2+} (\textbf{1}, orange), and one decomposition product, \textbf{3b\textsubscript{1}}. \added{Value at the intersection between lines is listed in Table S1.}}
+	\caption{Electrochemical free energy ($F$, in \si{\electronvolt}) as a function of the electrode potential ($E^0_{rel}$, in \si{\volt}) for the bare \ce{CaH2} surface (dark and light blue, see text), \ce{[Ca(THF)_6]^2+} (\textbf{1}, orange), and one decomposition product, \textbf{3b\textsubscript{1}}. \added{Values at  intersections between lines ar listed in Table S1.}}
 	\label{fig:cah2}
 \end{figure}
 

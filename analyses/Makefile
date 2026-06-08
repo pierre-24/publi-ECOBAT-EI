@@ -19,4 +19,4 @@ main:
 	-L -5 --limits="-4.5:2" -o ../Figure6.pdf
 
 SI:
-	python ./plot_wfunc.py `seq 45 55` 60 65 70 -o ../FigureS2.pdf
+	python ./plot_wfunc.py `seq 45 55` 60 65 70 -o ../FigureS3.pdf
