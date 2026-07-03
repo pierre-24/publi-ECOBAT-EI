@@ -253,12 +253,16 @@ Following Filhol and co-workers \cite{kopaclautarElectrolyteReactivityDouble2020
 Following our previous investigation \cite{beaujeanBinding2025}, structural optimizations employed the Limited-memory Broyden-Flet\-cher-Gol\-dfarb-Shanno (L-BFGS) algorithm, as implemented in the Atomic Simulation Environment (ASE) package \cite{larsenAtomicSimulationEnvironment2017}. 
 Forces and energies were obtained from VASP, and the optimizations proceed until all atomic forces fall below \SI{e-2}{\electronvolt\per\angstrom}. 
 
-For solvated calcium species (i.e., the calcium cation and its first explicit solvation shell), the system was placed in a cubic box of \SI{20}{\angstrom} side length, centered at the molecular center of mass, with fixed cell dimensions during optimization. 
-Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}. 
-A correct description of the first solvatation shell is crucial for the potential-dependent calculations \cite{hagopianAdvancementHomogeneousBackground2022}. 
+\added{Degradation pathways of the solvated calcium species (i.e., the calcium cation and its first explicit solvation shell) were first studied in solution.}
+\added{In this case, t}he system was placed in a cubic box of \SI{20}{\angstrom} side length, centered at the molecular center of mass, with fixed cell dimensions during optimization.
+Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}.
+A correct description of the first solvatation shell is crucial for the potential-dependent calculations \cite{hagopianAdvancementHomogeneousBackground2022}.
 Thus, in line with the findings of Hahn \textit{et al.} \cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion was modeled as being coordinated by 6 THF molecules, arranged in a octahedral fashion with oxygens pointing towards the Ca.
 These optimizations employed the \texttt{Ca\_sv} pseudopotential.
-\added{This approach has been shown to provide reliable estimates of reaction energies in solution, with an accuracy comparable to that of more conventional Gaussian basis set methods.}\cite{vassettiGeneralizingContinuumSolvation2021,sandoval-paukerComputingStandardReduction2025}
+\added{The electronic energies of the different species were then extracted to estimate the reaction energies.
+Although plane-wave DFT with periodic boundary conditions is known to exhibit significant errors for isolated molecules in the gas phase, recent benchmark studies}\cite{vassettiGeneralizingContinuumSolvation2021,sandoval-paukerComputingStandardReduction2025}\added{ have shown that VASPsol combined with the PBE functional yields reaction energies comparable in accuracy to those obtained using Gaussian basis sets with meta-GGA or  hybrid exchange--correlation functionals.
+Moreover, the latter remain computationally demanding in plane-wave implementations while providing only marginal improvements in accuracy according to Vasseti and co-workers.}\cite{sandoval-paukerComputingStandardReduction2025}
+\added{Accordingly, the present methodology represents an appropriate compromise between accuracy and computational cost.}
 
 Slab models were constructed from optimized bulk structures of \ce{Ca^0} (Materials Project \cite{hortonAcceleratedDatadrivenMaterials2025} ID: \texttt{MP-45}) and \ce{CaH2} (\texttt{MP-23713}), both relaxed with respect to atomic positions and cell parameters. 
 From these, $3 \times 3$ and $2 \times 2$ slabs of the (100) surface of \ce{Ca^0} and \ce{CaH2}, respectively, were created. Each slab consists of six atomic layers and is separated from its periodic image by a vacuum region of \SI{52}{\angstrom} (to have room for the solvated structures, \textit{vide infra}). 
