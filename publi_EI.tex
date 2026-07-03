@@ -257,7 +257,8 @@ For solvated calcium species (i.e., the calcium cation and its first explicit so
 Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}. 
 A correct description of the first solvatation shell is crucial for the potential-dependent calculations \cite{hagopianAdvancementHomogeneousBackground2022}. 
 Thus, in line with the findings of Hahn \textit{et al.} \cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion was modeled as being coordinated by 6 THF molecules, arranged in a octahedral fashion with oxygens pointing towards the Ca.
-These optimizations employed the \texttt{Ca\_sv} pseudopotentiaL.
+These optimizations employed the \texttt{Ca\_sv} pseudopotential.
+\added{This approach has been shown to provide reliable estimates of reaction energies in solution, with an accuracy comparable to that of more conventional Gaussian basis set methods.}\cite{vassettiGeneralizingContinuumSolvation2021,sandoval-paukerComputingStandardReduction2025}
 
 Slab models were constructed from optimized bulk structures of \ce{Ca^0} (Materials Project \cite{hortonAcceleratedDatadrivenMaterials2025} ID: \texttt{MP-45}) and \ce{CaH2} (\texttt{MP-23713}), both relaxed with respect to atomic positions and cell parameters. 
 From these, $3 \times 3$ and $2 \times 2$ slabs of the (100) surface of \ce{Ca^0} and \ce{CaH2}, respectively, were created. Each slab consists of six atomic layers and is separated from its periodic image by a vacuum region of \SI{52}{\angstrom} (to have room for the solvated structures, \textit{vide infra}). 
