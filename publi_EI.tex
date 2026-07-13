@@ -33,7 +33,9 @@
 
 \definecolor{cream}{RGB}{222,217,201}
 
-\usepackage{changes}
+\usepackage[
+%final
+]{changes}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -247,22 +249,22 @@ All calculations, including geometry optimizations and binding energy evaluation
 The Perdew--Burke--Ernzerhof (PBE) exchange-correlation functional is employed in conjunction with the D3 dispersion correction and the projector augmented-wave (PAW) method \cite{blochlProjectorAugmentedwaveMethod1994}. 
 Unless otherwise mentioned, the \texttt{Ca\_pv} pseudopotential was used to model calcium \cite{blochlProjectorAugmentedwaveMethod1994,kresseUltrasoftPseudopotentialsProjector1999}. A kinetic energy cutoff of \SI{550}{\electronvolt} is applied to the plane-wave basis set. Brillouin zone integrations were performed using a $4 \times 4 \times 1$ Monkhorst-Pack $k$-point mesh \cite{monkhorstSpecialPointsBrillouinzone1976}.  
 The energy is converged using a tight convergence criteria of \SI{e-6}{\electronvolt}, without any smearing technique.
-Solvation effects from outer solvent molecules were included via the VASPSOL implicit solvation model \cite{mathewImplicitSolvationModel2014,mathewImplicitSelfconsistentElectrolyte2019}, with the dielectric constant set to $\varepsilon_r = 7.56$ to represent tetrahydrofuran (THF). 
+Solvation effects from outer solvent molecules were included via the VASPsol implicit solvation model \cite{mathewImplicitSolvationModel2014,mathewImplicitSelfconsistentElectrolyte2019}, with the dielectric constant set to $\varepsilon_r = 7.56$ to represent tetrahydrofuran (THF). 
 Following Filhol and co-workers \cite{kopaclautarElectrolyteReactivityDouble2020,kopaclautarModelingInterfacialElectrochemistry2020,hagopianInitioModellingInterfacial2021,nguyenSolvationReductionCoupling2023}, the surface tension parameter was set to $\tau = 0$, the cavity is defined using a density cutoff of $\rho_K = \SI{5e-5}{\elementarycharge\per\angstrom\cubed}$, and the cavity smearing parameter was kept at its default value of $\sigma_k = 0.6$.
 
 Following our previous investigation \cite{beaujeanBinding2025}, structural optimizations employed the Limited-memory Broyden-Flet\-cher-Gol\-dfarb-Shanno (L-BFGS) algorithm, as implemented in the Atomic Simulation Environment (ASE) package \cite{larsenAtomicSimulationEnvironment2017}. 
 Forces and energies were obtained from VASP, and the optimizations proceed until all atomic forces fall below \SI{e-2}{\electronvolt\per\angstrom}. 
 
-\added{Degradation pathways of the solvated calcium species (i.e., the calcium cation and its first explicit solvation shell) were first studied in solution.}
-\added{In this case, t}he system was placed in a cubic box of \SI{20}{\angstrom} side length, centered at the molecular center of mass, with fixed cell dimensions during optimization.
+Degradation pathways of the solvated calcium species (i.e., the calcium cation and its first explicit solvation shell) were first studied in solution.
+n this case, the system was placed in a cubic box of \SI{20}{\angstrom} side length, centered at the molecular center of mass, with fixed cell dimensions during optimization.
 Calcium is known to have large coordination shells, containing up to 8 species in some solvents \cite{shakourian-fardCalciumIonBatteriesIdentifying2019}.
 A correct description of the first solvatation shell is crucial for the potential-dependent calculations \cite{hagopianAdvancementHomogeneousBackground2022}.
 Thus, in line with the findings of Hahn \textit{et al.} \cite{hahnCriticalRoleConfigurational2020}, the \ce{Ca^{2+}} ion was modeled as being coordinated by 6 THF molecules, arranged in a octahedral fashion with oxygens pointing towards the Ca.
 These optimizations employed the \texttt{Ca\_sv} pseudopotential.
-\added{The electronic energies of the different species were then extracted to estimate the reaction energies.
-Although plane-wave DFT with periodic boundary conditions is known to exhibit significant errors for isolated molecules in the gas phase, recent benchmark studies}\cite{vassettiGeneralizingContinuumSolvation2021,sandoval-paukerComputingStandardReduction2025}\added{ have shown that VASPsol combined with the PBE functional yields reaction energies comparable in accuracy to those obtained using Gaussian basis sets with meta-GGA or  hybrid exchange--correlation functionals.
-Moreover, the latter remain computationally demanding in plane-wave implementations while providing only marginal improvements in accuracy according to Vasseti and co-workers.}\cite{sandoval-paukerComputingStandardReduction2025}
-\added{Accordingly, the present methodology represents an appropriate compromise between accuracy and computational cost.}
+The electronic energies of the different species were then extracted to estimate the reaction energies.
+Although plane-wave DFT with periodic boundary conditions is known to exhibit significant errors for isolated molecules in the gas phase, recent benchmark studies\cite{vassettiGeneralizingContinuumSolvation2021,sandoval-paukerComputingStandardReduction2025} have shown that VASPsol combined with the PBE functional yields reaction energies comparable in accuracy to those obtained using Gaussian basis sets with meta-GGA or  hybrid exchange--correlation functionals.
+Moreover, the latter remain computationally demanding in plane-wave implementations while providing only marginal improvements in accuracy according to Vasseti and co-workers.\cite{sandoval-paukerComputingStandardReduction2025}
+Accordingly, the present methodology represents an appropriate compromise between accuracy and computational cost.
 
 Slab models were constructed from optimized bulk structures of \ce{Ca^0} (Materials Project \cite{hortonAcceleratedDatadrivenMaterials2025} ID: \texttt{MP-45}) and \ce{CaH2} (\texttt{MP-23713}), both relaxed with respect to atomic positions and cell parameters. 
 From these, $3 \times 3$ and $2 \times 2$ slabs of the (100) surface of \ce{Ca^0} and \ce{CaH2}, respectively, were created. Each slab consists of six atomic layers and is separated from its periodic image by a vacuum region of \SI{52}{\angstrom} (to have room for the solvated structures, \textit{vide infra}). 
@@ -392,12 +394,12 @@ Note that these trends are approximate, since they lack the influence of the sur
 		1 & -2.20 & 2.365 $\pm$ 0.002 & --- \\
 		2 & -1.74 & 2.545 $\pm$ 0.047 & 4.497 \\
 		3a\textsubscript{1} & -1.92 & 2.536 $\pm$ 0.028 & 2.394 \\
-		3a\textsubscript{1}’ & -3.37 & 2.488 $\pm$ 0.040 & 2.089 \\
+		3a\textsubscript{1}' & -3.37 & 2.488 $\pm$ 0.040 & 2.089 \\
 		3b\textsubscript{1} & -4.72 & 2.597 $\pm$ 0.056 & 2.185 \\
-		3a\textsubscript{2}’ & -4.80 & 2.710 $\pm$ 0.382 & 2.165 \\
+		3a\textsubscript{2}' & -4.80 & 2.710 $\pm$ 0.382 & 2.165 \\
 		3b\textsubscript{2} & -4.04 & 2.617 $\pm$ 0.108 & 2.162 \\
 		3a\textsubscript{3} & -1.92 & 2.423 $\pm$ 0.013 & 2.344 \\
-		3b\textsubscript{3} & -4.21 & 2.653 $\pm$ 0.198 & 2.108 \\
+		3b\textsubscript{3} & -4.06 & 2.653 $\pm$ 0.198 & 2.108 \\
 		\hline
 	\end{tabular}
 	\caption{Reduction reaction energies starting from \textbf{1\textsuperscript{2+}} ($\Delta E_r$, in \si{\electronvolt}) and average calcium-oxygen distances (for the oxygen of \textit{intact} THF's, Ca--O[THF], with mean $\pm$ standard deviation, and for the oxygen of the \textit{degraded} THF, Ca--O[X], in \si{\angstrom}) for the different degradation and reorganization reactions.}
@@ -413,6 +415,7 @@ Notably, with the exception of \textbf{2} (due to the formation of \ce{CaH2} in 
 These findings suggest that, upon calcium deposition at the electrode surface (i.e., formation of the SEI), the corresponding degradation products are likely to remain associated with the metal center and contribute to surface passivation.
 This is consistent  with the theoretical results (molecular dynamics) of the intercalation degradation products of THF into the calcium metal layer, reported by Pathreeker \textit{et al.} \cite{pathreekerWhyTetrahydrofuranGood2021}. 
 Similarly, Young \textit{et al.}  \cite{youngEthyleneCarbonateBasedElectrolyte2018} have observed such intercalation in ethylene carbonate (EC), a solvent with similar structural features, even in the absence of added electrolyte.
+\added{As a point of comparison, additional calculations were performed using a Gaussian basis set (cc-pVTZ) and several exchange-correlation functionals (Table S3). These benchmark calculations demonstrate that the present approach yields reaction energy trends consistent with those obtained using Gaussian-based methods.}
 
 It should also be noted that with a $\Delta E_r$ of \SI{-2.20}{\electronvolt}, the two-electron reduction of \textbf{1\textsuperscript{2+}}, is predicted at $E^0_{rel} = -\frac{\Delta{E_r}}{2} - \SI{4.5}{\volt} = \SI{-3.4}{\volt}$ vs SHE, close to the value reported in the previous subsection. 
 However, for the other decompositions, the energetic trends presented in Table~\ref{tab:degrad} are approximate, as they do not account for the influence of the electrode. 
