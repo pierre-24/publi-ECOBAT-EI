@@ -17,13 +17,13 @@ cmap = plt.colormaps['viridis']
 colors = cmap(numpy.linspace(0, 1, len(args.distances)))
 
 for i, dx in enumerate(args.distances):
-    data_pot = pandas.read_csv('../data/work_function_conv/Ca_d_{}_potential.csv'.format(dx), names=['d', 'pot'], sep='\t')
+    data_pot = pandas.read_csv('../data/Figure_S3/Ca_d_{}_potential.csv'.format(dx), names=['d', 'pot'], sep='\t')
     
     d = data_pot['d']
     axes[0].plot(d[d < 15], data_pot['pot'][d < 15], color=colors[i], label='d={} Å'.format(dx)) 
     axes[0].plot(d[d > d.max() - 15] - d.max(), data_pot['pot'][d > d.max() - 15], color=colors[i]) 
     
-    data_chg = pandas.read_csv('../data/work_function_conv/Ca_d_{}_chg.csv'.format(dx), names=['d', 'chg', 'chgx', 'ichgx'], sep='\t')
+    data_chg = pandas.read_csv('../data/Figure_S3/Ca_d_{}_chg.csv'.format(dx), names=['d', 'chg', 'chgx', 'ichgx'], sep='\t')
     
     d = data_pot['d']
     axes[1].semilogy(d[d < 15], data_chg['chgx'][d < 15], color=colors[i]) 
