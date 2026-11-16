@@ -6,7 +6,7 @@ A publication about reaction at Calcium electrode interface, by Dr. [P. Beaujean
 
 *Understanding the fundamental electrochemical behavior of calcium electrolytes is crucial for advancing calcium-metal batteries. In this work, Grand-Canonical Density Functional Theory (GC-DFT) is used to elucidate the electrode reaction mechanisms governing calcium plating and solvent (tetrahydrofuran, THF) decomposition. Analysis of thermochemical energy profiles indicates that the commonly assumed solvated species [Ca(THF)₆]²⁺ becomes thermodynamically unstable below −2.9 V vs SHE, significantly more positive than its predicted reduction potential of −3.4 V. A Fukui-function-guided exploration of THF degradation pathways shows that solvent breakdown can be initiated at substantially higher potentials, with calcium hydride formation emerging near −1.5 V vs SHE through proton or hydride transfer from THF-derived fragments. The resulting CaH₂ further accelerates degradation by shifting reduction potentials approximately 1 V toward more positive values.*
 
-**Citation:** P. Beaujean, B. Champagne, *J. Mat. Chem. A* **2026**, accepted.
+**Citation:** P. Beaujean, B. Champagne, *J. Mat. Chem. A* **2026**, 14, 36882 ([10.1039/D6TA02841A](https://dx.doi.org/10.1039/D6TA02841A)).
 
 ## About this repository
 
